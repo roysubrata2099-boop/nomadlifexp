@@ -15,12 +15,22 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 
 section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h1, h2 {
@@ -39,7 +49,7 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-/* BUTTONS */
+/* BUTTON GLOW */
 .btn {
   display: inline-block;
   padding: 12px 25px;
@@ -49,40 +59,74 @@ p {
   color: white;
   font-weight: 600;
   background: linear-gradient(90deg, #a855f7, #f97316);
+  position: relative;
   transition: 0.3s;
 }
 
-.btn:hover {
-  opacity: 0.8;
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #a855f7, #f97316, #3b82f6);
+  filter: blur(10px);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
 }
 
-/* HERO WITH DARK OVERLAY */
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* HERO */
 .hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
     url("https://nomadlifexp.com/hero.jpg") center/cover no-repeat;
+
+  animation: heroFade 2s ease;
 }
 
-.hero h1 {
-  font-size: 3rem;
+@keyframes heroFade {
+  from { opacity: 0; transform: scale(1.1); }
+  to { opacity: 1; transform: scale(1); }
 }
 
-.hero p {
-  max-width: 600px;
-  margin: auto;
+/* LOGO */
+.logo {
+  width: 130px;
+  margin-bottom: 20px;
+  animation: float 4s ease-in-out infinite;
 }
 
-/* IMAGE STYLE */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* IMAGES */
 img {
   width: 100%;
   max-width: 600px;
   border-radius: 20px;
   margin-top: 20px;
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 /* LIST */
@@ -92,7 +136,7 @@ ul {
 }
 
 ul li {
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 18px;
 }
 
@@ -112,74 +156,88 @@ footer {
   border-top: 1px solid #222;
 }
 
+/* TYPEWRITER */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background: white;
+  margin-left: 3px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 </style>
 </head>
 
 <body>
 
 <!-- HERO -->
-<section class="hero">
-  <h1 class="gradient">NomadLifeXP — Evolve in Motion</h1>
-  <p>From chaos to clarity. Transform your mind, body, and spirit — one step at a time.</p>
+<section class="hero show">
+
+  <img src="https://nomadlifexp.com/logo.png" class="logo">
+
+  <h1 class="gradient typewriter" data-text="NomadLifeXP — Evolve in Motion"></h1>
+  <p class="typewriter" data-text="From chaos to clarity. Transform your mind, body, and spirit — one step at a time."></p>
 
   <div>
     <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">Watch the Journey</a>
     <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">Join on Instagram</a>
   </div>
+
 </section>
 
 <!-- ABOUT -->
 <section>
-  <h2 class="gradient">This is more than content. This is a movement.</h2>
-  <p>
-    Nomad — No-Mad. A journey through motion — physically, emotionally, spiritually.
-    This is about breaking patterns, finding clarity, and becoming who you're meant to be.
-    Every step is growth. Every moment is transformation.
-  </p>
+  <h2 class="gradient typewriter" data-text="This is more than content. This is a movement."></h2>
+  <p class="typewriter" data-text="Nomad — No-Mad. A journey through motion — physically, emotionally, spiritually. This is about breaking patterns, finding clarity, and becoming who you're meant to be."></p>
 </section>
 
-<!-- YOGA IMAGE SECTION -->
-<section style="text-align:center;">
-  <h2 class="gradient">Balance Your Mind & Body</h2>
+<!-- YOGA 1 -->
+<section>
+  <h2 class="gradient typewriter" data-text="Balance Your Mind & Body"></h2>
+  <img src="https://nomadlifexp.com/yoga.jpg">
+  <p class="typewriter" data-text="Strength isn’t just physical. True power comes from inner balance."></p>
+</section>
 
-  <img src="https://nomadlifexp.com/yoga.jpg" alt="Yoga Image">
-
-  <p>
-    Strength isn’t just physical. True power comes from inner balance, discipline, and clarity.
-  </p>
+<!-- YOGA 2 -->
+<section>
+  <h2 class="gradient typewriter" data-text="Find Your Inner Strength"></h2>
+  <img src="https://nomadlifexp.com/yoga2.jpg">
+  <p class="typewriter" data-text="Movement is medicine. Breath is power. Awareness is transformation."></p>
 </section>
 
 <!-- VALUE -->
 <section>
-  <h2 class="gradient">What you'll experience here:</h2>
+  <h2 class="gradient typewriter" data-text="What you'll experience here:"></h2>
   <ul>
-    <li>🔥 Deep mindset shifts & real talk</li>
-    <li>💪 Fitness & discipline</li>
-    <li>🧘 Healing, balance, clarity</li>
-    <li>🌍 Travel, freedom, transformation</li>
+    <li>🔥 Deep mindset shifts</li>
+    <li>💪 Discipline & fitness</li>
+    <li>🧘 Balance & clarity</li>
+    <li>🌍 Freedom & growth</li>
   </ul>
 </section>
 
 <!-- CONTENT -->
 <section>
-  <h2 class="gradient">Start Your Transformation</h2>
-  <p>Real stories. Raw motivation. Deep mindset shifts.</p>
-  <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">Subscribe on YouTube</a>
+  <h2 class="gradient typewriter" data-text="Start Your Transformation"></h2>
+  <p class="typewriter" data-text="Real stories. Raw motivation. Deep mindset shifts."></p>
+  <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">Subscribe</a>
 </section>
 
 <!-- COMMUNITY -->
 <section>
-  <h2 class="gradient">Join the Tribe</h2>
-  <p>
-    A community of people evolving, growing, and pushing forward.
-    If you're feeling stuck or searching for meaning — you belong here.
-  </p>
+  <h2 class="gradient typewriter" data-text="Join the Tribe"></h2>
+  <p class="typewriter" data-text="If you're feeling stuck or searching for meaning — you belong here."></p>
 </section>
 
 <!-- EMAIL -->
 <section>
-  <h2 class="gradient">Get Weekly Mindset Drops</h2>
-  <p>No fluff. Just growth.</p>
+  <h2 class="gradient typewriter" data-text="Get Weekly Mindset Drops"></h2>
+  <p class="typewriter" data-text="No fluff. Just growth."></p>
 
   <input type="text" placeholder="Your Name">
   <input type="email" placeholder="Your Email"><br>
@@ -189,10 +247,45 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-  <p>Follow the journey</p>
+  <p class="typewriter" data-text="Follow the journey"></p>
   <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
   <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
 </footer>
+
+<!-- SCRIPTS -->
+<script>
+
+// TYPEWRITER WORD BY WORD
+const elements = document.querySelectorAll(".typewriter");
+
+elements.forEach((el, index) => {
+  const words = el.dataset.text.split(" ");
+  let i = 0;
+
+  function type() {
+    if (i < words.length) {
+      el.innerHTML += words[i] + " ";
+      i++;
+      setTimeout(type, 80);
+    }
+  }
+
+  setTimeout(type, index * 400);
+});
+
+// SCROLL REVEAL
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.classList.add("show");
+    }
+  });
+});
+
+</script>
 
 </body>
 </html>
