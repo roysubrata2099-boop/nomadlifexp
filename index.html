@@ -10,8 +10,6 @@
 
 <style>
 
-/* GLOBAL */
-
 *{
   margin:0;
   padding:0;
@@ -25,10 +23,6 @@ body{
   overflow-x:hidden;
 }
 
-html{
-  scroll-behavior:smooth;
-}
-
 /* NAVBAR */
 
 nav{
@@ -36,9 +30,8 @@ nav{
   padding:20px 8%;
   position:fixed;
   top:0;
-  left:0;
   z-index:999;
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.85);
   backdrop-filter:blur(10px);
 
   display:flex;
@@ -49,6 +42,12 @@ nav{
 .logo-text{
   font-size:28px;
   font-weight:800;
+}
+
+.gradient{
+  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 nav ul{
@@ -64,19 +63,6 @@ nav ul li a{
   color:white;
   text-decoration:none;
   font-weight:600;
-  transition:0.3s;
-}
-
-nav ul li a:hover{
-  color:#f97316;
-}
-
-/* GRADIENT */
-
-.gradient{
-  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
 }
 
 /* HERO */
@@ -88,8 +74,8 @@ nav ul li a:hover{
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  text-align:center;
 
+  text-align:center;
   padding:20px;
 
   background:
@@ -163,7 +149,7 @@ nav ul li a:hover{
   font-size:18px;
 }
 
-/* IMAGE LEFT TEXT RIGHT */
+/* IMAGE LEFT + TEXT RIGHT */
 
 .row{
   display:flex;
@@ -175,7 +161,8 @@ nav ul li a:hover{
 .row img{
   width:45%;
   border-radius:25px;
-  box-shadow:0 0 30px rgba(255,255,255,0.05);
+  object-fit:cover;
+  box-shadow:0 0 30px rgba(255,255,255,0.08);
 }
 
 .text{
@@ -193,7 +180,7 @@ nav ul li a:hover{
   font-size:18px;
 }
 
-/* VALUE SECTION */
+/* VALUES */
 
 .values{
   text-align:center;
@@ -225,7 +212,6 @@ nav ul li a:hover{
   margin:10px;
   border:none;
   border-radius:30px;
-  outline:none;
 }
 
 /* FOOTER */
@@ -244,6 +230,11 @@ footer p{
 
 @media(max-width:900px){
 
+  nav{
+    flex-direction:column;
+    gap:20px;
+  }
+
   .hero h1{
     font-size:45px;
   }
@@ -259,11 +250,6 @@ footer p{
   .text{
     width:100%;
     text-align:center;
-  }
-
-  nav{
-    flex-direction:column;
-    gap:20px;
   }
 
 }
@@ -330,13 +316,14 @@ footer p{
 
 </section>
 
-<!-- YOGA 1 -->
+<!-- YOGA SECTION 1 -->
 
 <section class="section">
 
   <div class="row">
 
-    <img src="https://nomadlifexp.com/yoga-new.jpg">
+    <!-- REPLACED IMAGE -->
+    <img src="https://nomadlifexp.com/yoga-new.jpg" alt="Yoga Image">
 
     <div class="text">
 
@@ -354,13 +341,13 @@ footer p{
 
 </section>
 
-<!-- YOGA 2 -->
+<!-- YOGA SECTION 2 -->
 
 <section class="section">
 
   <div class="row">
 
-    <img src="https://nomadlifexp.com/yoga2.jpg">
+    <img src="https://nomadlifexp.com/yoga2.jpg" alt="Yoga Image">
 
     <div class="text">
 
@@ -454,7 +441,7 @@ footer p{
     Get Weekly Mindset Drops
   </h2>
 
-  <p style="margin-top:20px; color:#ccc;">
+  <p style="margin-top:20px;color:#ccc;">
     No fluff. Just growth.
   </p>
 
