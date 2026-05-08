@@ -3,171 +3,269 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>NomadLifeXP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 
 /* GLOBAL */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #000;
-  color: #fff;
-  overflow-x: hidden;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-section {
-  padding: 100px 20px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 1s ease;
+body{
+  font-family:'Poppins',sans-serif;
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
 }
 
-section.show {
-  opacity: 1;
-  transform: translateY(0);
+html{
+  scroll-behavior:smooth;
 }
 
-h1, h2 {
-  font-weight: 800;
+/* NAVBAR */
+
+nav{
+  width:100%;
+  padding:20px 8%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+  background:rgba(0,0,0,0.8);
+  backdrop-filter:blur(10px);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-p {
-  color: #ccc;
-  line-height: 1.6;
+.logo-text{
+  font-size:28px;
+  font-weight:800;
 }
 
-/* GRADIENT TEXT */
-.gradient {
-  background: linear-gradient(90deg, #a855f7, #f97316, #3b82f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+nav ul{
+  display:flex;
+  list-style:none;
 }
 
-/* BUTTON GLOW */
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  margin: 10px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  background: linear-gradient(90deg, #a855f7, #f97316);
-  position: relative;
-  transition: 0.3s;
+nav ul li{
+  margin-left:25px;
 }
 
-.btn::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #a855f7, #f97316, #3b82f6);
-  filter: blur(10px);
-  opacity: 0;
-  transition: 0.3s;
-  z-index: -1;
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
 }
 
-.btn:hover::before {
-  opacity: 1;
+nav ul li a:hover{
+  color:#f97316;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+/* GRADIENT */
+
+.gradient{
+  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 /* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 
-  background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-    url("https://nomadlifexp.com/hero.jpg") center/cover no-repeat;
+.hero{
+  height:100vh;
 
-  animation: heroFade 2s ease;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  padding:20px;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+  url("https://nomadlifexp.com/hero.jpg") center/cover no-repeat;
 }
 
-@keyframes heroFade {
-  from { opacity: 0; transform: scale(1.1); }
-  to { opacity: 1; transform: scale(1); }
+.logo{
+  width:130px;
+  margin-bottom:20px;
 }
 
-/* LOGO */
-.logo {
-  width: 130px;
-  margin-bottom: 20px;
-  animation: float 4s ease-in-out infinite;
+.hero h1{
+  font-size:65px;
+  max-width:900px;
 }
 
-@keyframes float {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+.hero p{
+  max-width:700px;
+  margin-top:20px;
+  color:#ddd;
+  line-height:1.8;
+  font-size:20px;
 }
 
-/* IMAGES */
-img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 20px;
-  margin-top: 20px;
-  transition: transform 0.5s;
+/* BUTTON */
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  margin-right:10px;
+
+  padding:14px 28px;
+
+  border-radius:40px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+
+  background:linear-gradient(90deg,#a855f7,#f97316);
+
+  transition:0.3s;
 }
 
-img:hover {
-  transform: scale(1.05);
+.btn:hover{
+  transform:scale(1.05);
 }
 
-/* LIST */
-ul {
-  list-style: none;
-  padding: 0;
+/* SECTION */
+
+.section{
+  padding:100px 8%;
 }
 
-ul li {
-  margin: 12px 0;
-  font-size: 18px;
+/* CENTER CONTENT */
+
+.center{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
 }
 
-/* INPUT */
-input {
-  padding: 12px;
-  margin: 10px;
-  width: 250px;
-  border: none;
-  border-radius: 20px;
+.center h2{
+  font-size:50px;
+  margin-bottom:25px;
+}
+
+.center p{
+  color:#ccc;
+  line-height:1.9;
+  font-size:18px;
+}
+
+/* IMAGE LEFT TEXT RIGHT */
+
+.row{
+  display:flex;
+  align-items:center;
+  gap:60px;
+  margin-top:80px;
+}
+
+.row img{
+  width:45%;
+  border-radius:25px;
+  box-shadow:0 0 30px rgba(255,255,255,0.05);
+}
+
+.text{
+  width:55%;
+}
+
+.text h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.text p{
+  color:#ccc;
+  line-height:1.9;
+  font-size:18px;
+}
+
+/* VALUE SECTION */
+
+.values{
+  text-align:center;
+}
+
+.values h2{
+  font-size:50px;
+  margin-bottom:40px;
+}
+
+.values ul{
+  list-style:none;
+}
+
+.values li{
+  margin:18px 0;
+  font-size:22px;
+}
+
+/* EMAIL */
+
+.email-box{
+  text-align:center;
+}
+
+.email-box input{
+  width:280px;
+  padding:14px;
+  margin:10px;
+  border:none;
+  border-radius:30px;
+  outline:none;
 }
 
 /* FOOTER */
-footer {
-  text-align: center;
-  padding: 40px;
-  border-top: 1px solid #222;
+
+footer{
+  text-align:center;
+  padding:40px;
+  border-top:1px solid #111;
 }
 
-/* TYPEWRITER */
-.cursor {
-  display: inline-block;
-  width: 2px;
-  background: white;
-  margin-left: 3px;
-  animation: blink 1s infinite;
+footer p{
+  color:#777;
 }
 
-@keyframes blink {
-  0%,100% { opacity: 1; }
-  50% { opacity: 0; }
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .row{
+    flex-direction:column;
+  }
+
+  .row img{
+    width:100%;
+  }
+
+  .text{
+    width:100%;
+    text-align:center;
+  }
+
+  nav{
+    flex-direction:column;
+    gap:20px;
+  }
+
 }
 
 </style>
@@ -175,117 +273,222 @@ footer {
 
 <body>
 
+<!-- NAVBAR -->
+
+<nav>
+
+  <div class="logo-text gradient">
+    NomadLifeXP
+  </div>
+
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#journey">Journey</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+
+</nav>
+
 <!-- HERO -->
-<section class="hero show">
+
+<section class="hero">
 
   <img src="https://nomadlifexp.com/logo.png" class="logo">
 
-  <h1 class="gradient typewriter" data-text="NomadLifeXP — Evolve in Motion"></h1>
-  <p class="typewriter" data-text="From chaos to clarity. Transform your mind, body, and spirit — one step at a time."></p>
+  <h1 class="gradient">
+    NomadLifeXP — Evolve in Motion
+  </h1>
+
+  <p>
+    From chaos to clarity. Transform your mind, body, and spirit — one step at a time.
+  </p>
 
   <div>
-    <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">Watch the Journey</a>
-    <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">Join on Instagram</a>
+    <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">
+      Watch the Journey
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">
+      Join on Instagram
+    </a>
   </div>
 
 </section>
 
 <!-- ABOUT -->
-<section>
-  <h2 class="gradient typewriter" data-text="This is more than content. This is a movement."></h2>
-  <p class="typewriter" data-text="Nomad — No-Mad. A journey through motion — physically, emotionally, spiritually. This is about breaking patterns, finding clarity, and becoming who you're meant to be."></p>
+
+<section class="section center" id="about">
+
+  <h2 class="gradient">
+    This is more than content. This is a movement.
+  </h2>
+
+  <p>
+    Nomad — No-Mad. A journey through motion — physically, emotionally, spiritually.
+    This is about breaking patterns, finding clarity, and becoming who you're meant to be.
+  </p>
+
 </section>
 
 <!-- YOGA 1 -->
-<section>
-  <h2 class="gradient typewriter" data-text="Balance Your Mind & Body"></h2>
-  <img src="https://nomadlifexp.com/yoga-new.jpg">
-  <p class="typewriter" data-text="Strength isn’t just physical. True power comes from inner balance."></p>
+
+<section class="section">
+
+  <div class="row">
+
+    <img src="https://nomadlifexp.com/yoga-new.jpg">
+
+    <div class="text">
+
+      <h2 class="gradient">
+        Balance Your Mind & Body
+      </h2>
+
+      <p>
+        Strength isn’t just physical. True power comes from inner balance.
+      </p>
+
+    </div>
+
+  </div>
+
 </section>
 
 <!-- YOGA 2 -->
-<section>
-  <h2 class="gradient typewriter" data-text="Find Your Inner Strength"></h2>
-  <img src="https://nomadlifexp.com/yoga2.jpg">
-  <p class="typewriter" data-text="Movement is medicine. Breath is power. Awareness is transformation."></p>
+
+<section class="section">
+
+  <div class="row">
+
+    <img src="https://nomadlifexp.com/yoga2.jpg">
+
+    <div class="text">
+
+      <h2 class="gradient">
+        Find Your Inner Strength
+      </h2>
+
+      <p>
+        Movement is medicine. Breath is power. Awareness is transformation.
+      </p>
+
+    </div>
+
+  </div>
+
 </section>
 
-<!-- VALUE -->
-<section>
-  <h2 class="gradient typewriter" data-text="What you'll experience here:"></h2>
+<!-- VALUES -->
+
+<section class="section values">
+
+  <h2 class="gradient">
+    What you'll experience here:
+  </h2>
+
   <ul>
     <li>🔥 Deep mindset shifts</li>
     <li>💪 Discipline & fitness</li>
     <li>🧘 Balance & clarity</li>
     <li>🌍 Freedom & growth</li>
   </ul>
+
 </section>
 
 <!-- CONTENT -->
-<section>
-  <h2 class="gradient typewriter" data-text="Start Your Transformation"></h2>
-  <p class="typewriter" data-text="Real stories. Raw motivation. Deep mindset shifts."></p>
-  <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">Subscribe</a>
+
+<section class="section center" id="journey">
+
+  <h2 class="gradient">
+    Start Your Transformation
+  </h2>
+
+  <p>
+    Real stories. Raw motivation. Deep mindset shifts.
+  </p>
+
+  <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">
+    Subscribe
+  </a>
+
 </section>
 
 <!-- COMMUNITY -->
-<section>
-  <h2 class="gradient typewriter" data-text="Join the Tribe"></h2>
-  <p class="typewriter" data-text="If you're feeling stuck or searching for meaning — you belong here."></p>
+
+<section class="section center">
+
+  <h2 class="gradient">
+    Join the Tribe
+  </h2>
+
+  <p>
+    If you're feeling stuck or searching for meaning — you belong here.
+  </p>
+
+</section>
+
+<!-- BLOG SECTION -->
+
+<section class="section center">
+
+  <h2 class="gradient">
+    Read the Blog
+  </h2>
+
+  <p>
+    Explore transformation stories, mindset lessons, fitness journeys,
+    travel experiences, and spiritual growth.
+  </p>
+
+  <a class="btn" href="blog.html">
+    Open Blog
+  </a>
+
 </section>
 
 <!-- EMAIL -->
-<section>
-  <h2 class="gradient typewriter" data-text="Get Weekly Mindset Drops"></h2>
-  <p class="typewriter" data-text="No fluff. Just growth."></p>
 
-  <input type="text" placeholder="Your Name">
-  <input type="email" placeholder="Your Email"><br>
+<section class="section email-box">
 
-  <button class="btn">Join the Movement</button>
+  <h2 class="gradient">
+    Get Weekly Mindset Drops
+  </h2>
+
+  <p style="margin-top:20px; color:#ccc;">
+    No fluff. Just growth.
+  </p>
+
+  <div style="margin-top:30px;">
+
+    <input type="text" placeholder="Your Name">
+
+    <input type="email" placeholder="Your Email">
+
+  </div>
+
+  <button class="btn">
+    Join the Movement
+  </button>
+
 </section>
 
 <!-- FOOTER -->
+
 <footer>
-  <p class="typewriter" data-text="Follow the journey"></p>
-  <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
-  <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
+
+  <p>
+    Follow the journey
+  </p>
+
+  <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">
+    YouTube
+  </a>
+
+  <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">
+    Instagram
+  </a>
+
 </footer>
-
-<!-- SCRIPTS -->
-<script>
-
-// TYPEWRITER WORD BY WORD
-const elements = document.querySelectorAll(".typewriter");
-
-elements.forEach((el, index) => {
-  const words = el.dataset.text.split(" ");
-  let i = 0;
-
-  function type() {
-    if (i < words.length) {
-      el.innerHTML += words[i] + " ";
-      i++;
-      setTimeout(type, 80);
-    }
-  }
-
-  setTimeout(type, index * 400);
-});
-
-// SCROLL REVEAL
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-  sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      sec.classList.add("show");
-    }
-  });
-});
-
-</script>
 
 </body>
 </html>
