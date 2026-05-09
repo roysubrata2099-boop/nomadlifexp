@@ -4,6 +4,10 @@ Welcome 👋
 
 ## Latest Posts
 
-👉 Check my latest fitness and lifestyle articles below:
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
-- Why Do People Watch Fitness and Yoga Videos Every Day but Never Change?
+---
+
+Stay consistent. Build your best self.
