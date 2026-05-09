@@ -8,4 +8,4 @@ date: 2026-05-08
 Many people consume fitness content but never apply it.
 
 Real transformation comes from action.
-![Fitness Image](fitness.jpg)
+![Fitness Image](/images/fitness.jpg)
