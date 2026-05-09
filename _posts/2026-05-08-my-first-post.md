@@ -1,6 +1,10 @@
 ---
-title: "My First Post"
+title: "Fitness Motivation"
 date: 2026-05-08
 ---
 
-Hello! This is my first GitHub Pages blog post.
+![Fitness Image](/images/fitness.jpg)
+
+Many people consume fitness content but never apply it.
+
+Real transformation comes from action.
