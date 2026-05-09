@@ -1,6 +1,9 @@
 # NomadLifeXP Blog
 
-Welcome 👋
+Welcome 👋  
+Fitness • Yoga • Mindset • Growth
+
+---
 
 ## Latest Posts
 
