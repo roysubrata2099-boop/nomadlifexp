@@ -1,3 +1,7 @@
-title: NomadLifeXP Blog
-description: Fitness, Yoga & Mindset Blog
+title: "NomadLifeXP Blog"
+description: "Fitness, Yoga & Mindset Blog"
+
 theme: minima
+
+plugins:
+  - jekyll-feed
