@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discipline and Inner Strength</title>
+  <title>Until You Realize This About Discipline…</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -61,6 +62,49 @@
       margin: 20px 0;
     }
 
+    /* Engagement Section */
+    .engagement {
+      margin-top: 50px;
+      padding: 20px;
+      background: #111827;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #334155;
+    }
+
+    .buttons {
+      margin: 15px 0;
+    }
+
+    button {
+      background: #1e293b;
+      border: none;
+      color: #e2e8f0;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #334155;
+    }
+
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -74,96 +118,91 @@
 <body>
 
   <header>
-    <h1>Discipline and Inner Strength</h1>
-    <p>Until You Realize This About Discipline…</p>
+    <h1>Until You Realize This About Discipline…</h1>
+    <p>Most people never understand this shift in mindset</p>
   </header>
 
   <div class="container">
 
-    <p>
-      Most people think discipline is restriction. That it takes away freedom, comfort, and happiness.
-    </p>
+    <p>Most people think discipline is restriction. That it takes away freedom, comfort, and happiness.</p>
 
-    <p>
-      But what if the opposite is true?
-    </p>
+    <p>But what if the opposite is true?</p>
 
-    <p class="highlight">
-      What if discipline is actually the price of freedom, clarity, power, and control?
-    </p>
+    <p class="highlight">What if discipline is actually the price of freedom, clarity, power, and control?</p>
 
-    <p>
-      The truth is simple. The life you want is hidden in the habits you keep avoiding. The early mornings,
-      the hard choices, the consistency nobody sees.
-    </p>
+    <p>The truth is simple. The life you want is hidden in the habits you keep avoiding. The early mornings, the hard choices, the consistency nobody sees.</p>
 
-    <p>
-      Most people wait for motivation. Very few learn self control. And that changes everything.
-    </p>
+    <p>Most people wait for motivation. Very few learn self control. And that changes everything.</p>
 
     <h2>The Moment Comfort Becomes Dangerous</h2>
 
-    <p>
-      Comfort feels safe, but it quietly keeps people stuck. Days turn into routines, dreams turn into delays,
-      and potential slowly fades into excuses.
-    </p>
+    <p>Comfort feels safe, but it quietly keeps people stuck. Days turn into routines, dreams turn into delays, and potential slowly fades into excuses.</p>
 
-    <blockquote>
-      Growth begins when comfort ends.
-    </blockquote>
+    <blockquote>Growth begins when comfort ends.</blockquote>
 
-    <p>
-      The moment you start choosing discipline over temporary comfort, something shifts inside you.
-      Your mind becomes sharper, your body becomes stronger, and your confidence starts to feel real.
-    </p>
+    <p>The moment you start choosing discipline over temporary comfort, something shifts inside you. Your mind becomes sharper, your body becomes stronger, and your confidence starts to feel real.</p>
 
     <h2>Find Inner Strength</h2>
 
-    <p>
-      Discipline is not about perfection. It is about showing up even when you do not feel like it.
-    </p>
+    <p>Discipline is not about perfection. It is about showing up even when you do not feel like it.</p>
 
-    <p>
-      That is where inner strength is built. Not in easy moments, but in the moments where quitting feels easier.
-    </p>
+    <p>That is where inner strength is built. Not in easy moments, but in the moments where quitting feels easier.</p>
 
-    <p>
-      Most people never realize how powerful they can become because they never stay consistent long enough to find out.
-    </p>
+    <p>Most people never realize how powerful they can become because they never stay consistent long enough to find out.</p>
 
     <h2>Master Yourself</h2>
 
-    <p>
-      The people who truly win in life are not always the smartest or the most talented.
-    </p>
+    <p>The people who truly win in life are not always the smartest or the most talented.</p>
 
-    <p>
-      They simply learn to master themselves.
-    </p>
+    <p>They simply learn to master themselves.</p>
 
-    <p>
-      Their emotions do not control them. Distractions do not own their attention. Excuses do not decide their future.
-    </p>
+    <p>Their emotions do not control them. Distractions do not own their attention. Excuses do not decide their future.</p>
 
-    <p>
-      And once you reach that level of self control, everything changes.
-    </p>
+    <p>And once you reach that level of self control, everything changes.</p>
 
     <h2>Final Thoughts</h2>
 
-    <p>
-      Discipline is not punishment. It is power hidden in daily choices.
-    </p>
+    <p>Discipline is not punishment. It is power hidden in daily choices.</p>
 
-    <p>
-      The moment you stop avoiding discomfort and start mastering yourself, you unlock a version of yourself most people never meet. 🔥
-    </p>
+    <p>The moment you stop avoiding discomfort and start mastering yourself, you unlock a version of yourself most people never meet. 🔥</p>
+
+    <!-- Engagement Section -->
+    <div class="engagement">
+
+      <h2>Enjoyed this blog?</h2>
+
+      <div class="buttons">
+        <button onclick="alert('You liked this post! 🔥')">👍 Like</button>
+        <button onclick="shareBlog()">🔗 Share</button>
+      </div>
+
+      <h3>Leave a Comment</h3>
+      <input type="text" placeholder="Your name" />
+      <textarea placeholder="Write your comment..."></textarea>
+      <br />
+      <button onclick="alert('Comment submitted! (demo only)')">Post Comment</button>
+
+    </div>
 
   </div>
 
   <footer>
     © 2026 Discipline Blog | Built with focus and consistency
   </footer>
+
+  <script>
+    function shareBlog() {
+      if (navigator.share) {
+        navigator.share({
+          title: "Until You Realize This About Discipline…",
+          text: "A powerful blog about discipline and self-mastery.",
+          url: window.location.href
+        });
+      } else {
+        alert("Share feature not supported on this browser.");
+      }
+    }
+  </script>
 
 </body>
 </html>
