@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Why Fitness Consistency Matters</title>
+<title>Why Do People Watch Fitness and Yoga Videos Every Day but Never Change?</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -27,10 +27,20 @@ h1{
   -webkit-text-fill-color:transparent;
 }
 
+h2{
+  margin-top:30px;
+  color:#fff;
+}
+
 p{
   color:#ccc;
   line-height:1.9;
   font-size:17px;
+}
+
+hr{
+  margin:30px 0;
+  border:1px solid #222;
 }
 
 button{
@@ -50,17 +60,17 @@ button{
   background:#222;
 }
 
-textarea{
+textarea, input{
   width:100%;
-  height:120px;
-  margin-top:15px;
   padding:10px;
+  margin-top:10px;
   border-radius:10px;
+  border:none;
+  outline:none;
 }
 
-hr{
-  margin:30px 0;
-  border:1px solid #222;
+.like-box{
+  margin-top:20px;
 }
 
 </style>
@@ -68,18 +78,35 @@ hr{
 
 <body>
 
-<h1>Why Fitness Consistency Matters</h1>
+<h1>Why Do People Watch Fitness and Yoga Videos Every Day but Never Change?</h1>
 
 <p>
-Many people watch fitness and yoga videos daily but never change their body or life. Real transformation comes from consistency, not motivation.
+Many people spend hours watching fitness and yoga videos every day.
 </p>
 
 <p>
-Motivation fades quickly. Discipline stays. The people who truly transform are the ones who continue even when they don’t feel like it.
+They know about workouts, muscle building, fat loss, healthy diets, meditation, flexibility, and mindfulness. They save reels, watch motivational content, and even tell others what they should do to stay healthy.
 </p>
 
 <p>
-Consistency builds confidence. Small actions repeated daily create extraordinary results over time.
+But most of them never stay consistent themselves.
+</p>
+
+<p>
+The truth is, watching fitness or yoga content can inspire you for a few minutes, but real change only happens when you practice it regularly.
+</p>
+
+<p>
+One workout. One yoga session. One healthy habit repeated daily.
+That is what changes both the body and the mind.
+</p>
+
+<p>
+Fitness gives you strength. Yoga gives you balance. Consistency gives you results.
+</p>
+
+<p>
+You do not need more videos. You just need to start and keep showing up.
 </p>
 
 <hr>
@@ -92,14 +119,22 @@ Fitness is not about doing intense workouts for a few days. It is about showing 
 
 <hr>
 
-<h2>Final Thoughts</h2>
+<h2>Final Thought</h2>
 
 <p>
-Your body changes when your habits change. Discipline always wins over motivation.
+Motivation can help people start. Consistency is what truly changes lives.
 </p>
 
-<!-- LIKE -->
+<p>
+What do you think is harder for most people: starting their fitness journey or staying consistent?
+</p>
+
+<hr>
+
+<!-- LIKE BUTTON -->
+<div class="like-box">
 <button onclick="like()">👍 Like <span id="count">0</span></button>
+</div>
 
 <!-- SOCIAL -->
 <div class="social">
@@ -110,21 +145,22 @@ Your body changes when your habits change. Discipline always wins over motivatio
 
 <hr>
 
-<h3>Comments</h3>
+<h2>Comments</h2>
 <textarea placeholder="Write your comment..."></textarea>
+
+<button onclick="alert('Comment submitted (demo only)')">Post Comment</button>
 
 <hr>
 
-<h3>Subscribe</h3>
-<input type="email" placeholder="Enter email" style="width:100%;padding:10px;margin-top:10px;">
-<br>
+<h2>Subscribe</h2>
+<input type="email" placeholder="Enter email">
 <button>Subscribe</button>
 
 <script>
-let c=0;
+let c = 0;
 function like(){
-c++;
-document.getElementById("count").innerText=c;
+  c++;
+  document.getElementById("count").innerText = c;
 }
 </script>
 
