@@ -167,6 +167,7 @@ footer{
 
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="gradient" style="font-size:28px;font-weight:800;">
     NomadLifeXP Blog
@@ -178,6 +179,7 @@ footer{
   </div>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
   <h1 class="gradient">Stories of Transformation</h1>
   <p>Mindset • Fitness • Yoga • Growth • Freedom</p>
@@ -210,36 +212,20 @@ footer{
         Small actions repeated daily create extraordinary results over time.
       </p>
 
-      <!-- LIKE -->
-      <button class="btn" onclick="likePost1()">
-        👍 Like <span id="likeCount1">0</span>
-      </button>
+      <button class="btn" onclick="likePost1()">👍 Like <span id="likeCount1">0</span></button>
 
-      <!-- SHARE -->
       <div class="share-buttons">
-
-        <button class="btn" onclick="openYouTube()">
-          YouTube
-        </button>
-
-        <button class="btn" onclick="openInstagram()">
-          Instagram
-        </button>
-
-        <button class="btn" onclick="shareLinkedIn()">
-          LinkedIn
-        </button>
-
+        <button class="btn" onclick="openYouTube()">YouTube</button>
+        <button class="btn" onclick="openInstagram()">Instagram</button>
+        <button class="btn" onclick="shareLinkedIn()">LinkedIn</button>
       </div>
 
-      <!-- COMMENTS -->
       <h3 class="gradient">Comments</h3>
-      <textarea class="comment-box" placeholder="Write your comment..."></textarea>
+      <textarea class="comment-box"></textarea>
       <button class="btn">Post Comment</button>
 
-      <!-- SUBSCRIBE -->
-      <h3 class="gradient" style="margin-top:40px;">Subscribe for More</h3>
-      <input class="subscribe-input" type="email" placeholder="Enter your email">
+      <h3 class="gradient" style="margin-top:40px;">Subscribe</h3>
+      <input class="subscribe-input" type="email" placeholder="Enter email">
       <button class="btn">Subscribe</button>
 
     </div>
@@ -257,64 +243,62 @@ footer{
 
       <p>
         Most people think discipline is restriction.
-        That it takes away freedom, comfort, and happiness.
       </p>
 
       <p>
-        But what if discipline is actually the price of freedom, clarity, power, and control?
-      </p>
-
-      <p>
-        The truth is, the life you want is hidden in the habits you keep avoiding.
+        But discipline is actually the price of freedom, clarity, power, and control.
       </p>
 
       <h3 class="gradient">Find Inner Strength</h3>
 
       <p>
-        Discipline is not about perfection. It is about showing up when you do not feel like it.
+        Discipline is showing up when you don’t feel like it.
       </p>
 
       <h3 class="gradient">Master Yourself</h3>
 
       <p>
-        The people who win in life learn to master themselves.
+        Self-control changes everything in life.
+      </p>
+
+      <button class="btn" onclick="likePost2()">👍 Like <span id="likeCount2">0</span></button>
+
+      <div class="share-buttons">
+        <button class="btn" onclick="openYouTube()">YouTube</button>
+        <button class="btn" onclick="openInstagram()">Instagram</button>
+        <button class="btn" onclick="shareLinkedIn()">LinkedIn</button>
+      </div>
+
+      <h3 class="gradient">Comments</h3>
+      <textarea class="comment-box"></textarea>
+      <button class="btn">Post Comment</button>
+
+      <h3 class="gradient" style="margin-top:40px;">Subscribe</h3>
+      <input class="subscribe-input" type="email" placeholder="Enter email">
+      <button class="btn">Subscribe</button>
+
+    </div>
+  </div>
+
+  <!-- ================= BLOG 3 (COMING SOON) ================= -->
+
+  <div class="post">
+
+    <img src="yoga-new.jpg" alt="Discipline Creates Freedom">
+
+    <div class="post-content">
+
+      <h2 class="gradient">Discipline Creates Freedom</h2>
+
+      <p>
+        Discipline is not restriction—it is the path to freedom and clarity.
       </p>
 
       <p>
-        Discipline is power hidden in daily choices.
+        This blog is coming soon...
       </p>
 
-      <!-- LIKE -->
-      <button class="btn" onclick="likePost2()">
-        👍 Like <span id="likeCount2">0</span>
-      </button>
-
-      <!-- SHARE -->
-      <div class="share-buttons">
-
-        <button class="btn" onclick="openYouTube()">
-          YouTube
-        </button>
-
-        <button class="btn" onclick="openInstagram()">
-          Instagram
-        </button>
-
-        <button class="btn" onclick="shareLinkedIn()">
-          LinkedIn
-        </button>
-
-      </div>
-
-      <!-- COMMENTS -->
-      <h3 class="gradient">Comments</h3>
-      <textarea class="comment-box" placeholder="Write your comment..."></textarea>
-      <button class="btn">Post Comment</button>
-
-      <!-- SUBSCRIBE -->
-      <h3 class="gradient" style="margin-top:40px;">Subscribe for More</h3>
-      <input class="subscribe-input" type="email" placeholder="Enter your email">
-      <button class="btn">Subscribe</button>
+      <a class="btn" href="#">Coming Soon</a>
 
     </div>
   </div>
@@ -340,7 +324,7 @@ function likePost2(){
   document.getElementById("likeCount2").innerText = likes2;
 }
 
-/* SHARE FUNCTIONS */
+/* LINKS */
 
 function openYouTube(){
   window.open("https://www.youtube.com/", "_blank");
