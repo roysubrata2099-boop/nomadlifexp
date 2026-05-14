@@ -6,7 +6,7 @@
 
 <title>NomadLifeXP Blog</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,20 +20,8 @@ body{
 nav{
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:20px 8%;
-  background:rgba(0,0,0,0.85);
-  position:sticky;
-  top:0;
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid #111;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
-  font-weight:600;
+  background:#111;
 }
 
 .gradient{
@@ -42,96 +30,46 @@ nav a{
   -webkit-text-fill-color:transparent;
 }
 
-.hero{
-  padding:120px 8% 60px;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:60px;
-  margin-bottom:10px;
-}
-
-.hero p{
-  color:#ccc;
-  font-size:18px;
-}
-
 .section{
   padding:60px 8%;
 }
 
 .post{
   display:flex;
-  gap:40px;
-  align-items:center;
-  margin-bottom:100px;
+  gap:30px;
+  margin-bottom:80px;
   background:#0b0b0b;
-  padding:40px;
-  border-radius:25px;
-  border:1px solid #111;
-}
-
-.post img{
-  width:45%;
+  padding:30px;
   border-radius:20px;
 }
 
+.post img{
+  width:40%;
+  border-radius:15px;
+}
+
 .post-content{
-  width:55%;
-}
-
-.post-content h2{
-  font-size:34px;
-  margin-bottom:10px;
-}
-
-.post-content p{
-  color:#ccc;
-  line-height:1.7;
+  width:60%;
 }
 
 .btn{
   display:inline-block;
   margin-top:15px;
-  padding:12px 25px;
+  padding:12px 22px;
   border-radius:30px;
   background:linear-gradient(90deg,#a855f7,#f97316);
   color:white;
   text-decoration:none;
   font-weight:600;
-  transition:0.3s;
 }
 
 .btn:hover{
   transform:scale(1.05);
 }
 
-/* Coming soon style */
-.coming{
-  opacity:0.5;
-}
-
-footer{
-  text-align:center;
-  padding:40px;
-  border-top:1px solid #111;
-  color:#777;
-}
-
 @media(max-width:900px){
-  .post{
-    flex-direction:column;
-  }
-
-  .post img,
-  .post-content{
-    width:100%;
-  }
-
-  .hero h1{
-    font-size:40px;
-  }
+  .post{flex-direction:column;}
+  .post img,.post-content{width:100%;}
 }
 
 </style>
@@ -140,25 +78,12 @@ footer{
 <body>
 
 <nav>
-  <div class="gradient" style="font-size:28px;font-weight:800;">
-    NomadLifeXP Blog
-  </div>
-
-  <div>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-  </div>
+  <h2 class="gradient">NomadLifeXP Blog</h2>
 </nav>
-
-<!-- HERO -->
-<div class="hero">
-  <h1 class="gradient">Stories of Transformation</h1>
-  <p>Fitness • Yoga • Mindset • Discipline</p>
-</div>
 
 <div class="section">
 
-  <!-- BLOG 1 PREVIEW -->
+  <!-- BLOG 1 -->
   <div class="post">
     <img src="images/fitness.jpg">
 
@@ -170,35 +95,31 @@ footer{
     </div>
   </div>
 
-  <!-- BLOG 2 PREVIEW -->
+  <!-- BLOG 2 -->
   <div class="post">
     <img src="yoga2.jpg">
 
     <div class="post-content">
       <h2 class="gradient">Until You Realize This About Discipline</h2>
-      <p>Discipline is the price of freedom and control.</p>
+      <p>Discipline is the price of freedom and clarity.</p>
 
       <a class="btn" href="discipline-blog.html">Read More</a>
     </div>
   </div>
 
-  <!-- BLOG 3 (COMING SOON) -->
-  <div class="post coming">
+  <!-- BLOG 3 -->
+  <div class="post">
     <img src="yoga-new.jpg">
 
     <div class="post-content">
       <h2 class="gradient">Discipline Creates Freedom</h2>
-      <p>Discipline is not restriction—it is the path to clarity.</p>
+      <p>Coming soon...</p>
 
       <a class="btn" href="#">Coming Soon</a>
     </div>
   </div>
 
 </div>
-
-<footer>
-  © 2026 NomadLifeXP — All Rights Reserved
-</footer>
 
 </body>
 </html>
