@@ -1,46 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Fitness Blog</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Why Fitness Consistency Matters</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#000;
+  color:#fff;
+  max-width:900px;
+  margin:auto;
+  padding:40px;
+}
+
+h1{
+  font-size:40px;
+  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+p{
+  color:#ccc;
+  line-height:1.9;
+  font-size:17px;
+}
+
+button{
+  margin-top:15px;
+  padding:12px 20px;
+  border:none;
+  border-radius:25px;
+  background:linear-gradient(90deg,#a855f7,#f97316);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+
+textarea{
+  width:100%;
+  height:120px;
+  margin-top:15px;
+  padding:10px;
+  border-radius:10px;
+}
+
+.social button{
+  margin-right:10px;
+  margin-top:10px;
+  background:#222;
+}
+
+hr{
+  margin:30px 0;
+  border:1px solid #222;
+}
+
+</style>
 </head>
 
-<body style="font-family:Poppins;max-width:800px;margin:auto;padding:20px;background:#000;color:#fff;">
+<body>
 
 <h1>Why Fitness Consistency Matters</h1>
 
-<p>Real transformation comes from consistency, not motivation.</p>
+<p>
+Many people watch fitness and yoga videos daily but never change. Real transformation comes from consistency, not motivation.
+</p>
 
-<p>Motivation fades. Discipline stays.</p>
+<p>
+Motivation fades quickly. Discipline stays.
+</p>
+
+<p>
+Consistency builds confidence and transforms your body and mind.
+</p>
 
 <hr>
 
-<!-- LIKE -->
-<button onclick="like()">👍 Like <span id="c">0</span></button>
+<h2>Key Truth</h2>
+<p>Small daily actions create big long-term results.</p>
 
-<br><br>
+<hr>
+
+<h2>Final Thoughts</h2>
+<p>Consistency is more powerful than motivation.</p>
+
+<!-- LIKE -->
+<button onclick="like()">👍 Like <span id="count">0</span></button>
 
 <!-- SHARE -->
-<button onclick="window.open('https://youtube.com')">YouTube</button>
-<button onclick="window.open('https://instagram.com')">Instagram</button>
-<button onclick="window.open('https://linkedin.com')">LinkedIn</button>
+<div class="social">
+  <button onclick="window.open('https://youtube.com')">YouTube</button>
+  <button onclick="window.open('https://instagram.com')">Instagram</button>
+  <button onclick="window.open('https://linkedin.com')">LinkedIn</button>
+</div>
 
 <hr>
 
 <h3>Comments</h3>
-<textarea style="width:100%;height:120px;"></textarea>
+<textarea placeholder="Write your comment..."></textarea>
 
 <hr>
 
 <h3>Subscribe</h3>
-<input type="email" placeholder="Enter email" style="width:100%;padding:10px;">
+<input type="email" placeholder="Enter email" style="width:100%;padding:10px;margin-top:10px;">
+<br>
 <button>Subscribe</button>
 
 <script>
 let c=0;
 function like(){
 c++;
-document.getElementById("c").innerText=c;
+document.getElementById("count").innerText=c;
 }
 </script>
 
