@@ -22,14 +22,8 @@ body{
 
 h1{
   font-size:40px;
-  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-h2{
-  margin-top:30px;
   color:#fff;
+  margin-bottom:20px;
 }
 
 p{
@@ -38,39 +32,14 @@ p{
   font-size:17px;
 }
 
+h2{
+  margin-top:40px;
+  color:#fff;
+}
+
 hr{
   margin:30px 0;
   border:1px solid #222;
-}
-
-button{
-  margin-top:15px;
-  padding:12px 20px;
-  border:none;
-  border-radius:25px;
-  background:linear-gradient(90deg,#a855f7,#f97316);
-  color:white;
-  font-weight:600;
-  cursor:pointer;
-}
-
-.social button{
-  margin-right:10px;
-  margin-top:10px;
-  background:#222;
-}
-
-textarea, input{
-  width:100%;
-  padding:10px;
-  margin-top:10px;
-  border-radius:10px;
-  border:none;
-  outline:none;
-}
-
-.like-box{
-  margin-top:20px;
 }
 
 </style>
@@ -97,24 +66,24 @@ The truth is, watching fitness or yoga content can inspire you for a few minutes
 </p>
 
 <p>
-One workout. One yoga session. One healthy habit repeated daily.
+One workout.  
+One yoga session.  
+One healthy habit repeated daily.
+</p>
+
+<p>
 That is what changes both the body and the mind.
 </p>
 
 <p>
-Fitness gives you strength. Yoga gives you balance. Consistency gives you results.
+Fitness gives you strength.  
+Yoga gives you balance.  
+Consistency gives you results.
 </p>
 
 <p>
-You do not need more videos. You just need to start and keep showing up.
-</p>
-
-<hr>
-
-<h2>Key Truth</h2>
-
-<p>
-Fitness is not about doing intense workouts for a few days. It is about showing up every single day, even if it is small progress.
+You do not need more videos.  
+You just need to start and keep showing up.
 </p>
 
 <hr>
@@ -122,47 +91,13 @@ Fitness is not about doing intense workouts for a few days. It is about showing 
 <h2>Final Thought</h2>
 
 <p>
-Motivation can help people start. Consistency is what truly changes lives.
+Motivation can help people start.  
+Consistency is what truly changes lives.
 </p>
 
 <p>
 What do you think is harder for most people: starting their fitness journey or staying consistent?
 </p>
-
-<hr>
-
-<!-- LIKE BUTTON -->
-<div class="like-box">
-<button onclick="like()">👍 Like <span id="count">0</span></button>
-</div>
-
-<!-- SOCIAL -->
-<div class="social">
-  <button onclick="window.open('https://youtube.com')">YouTube</button>
-  <button onclick="window.open('https://instagram.com')">Instagram</button>
-  <button onclick="window.open('https://linkedin.com')">LinkedIn</button>
-</div>
-
-<hr>
-
-<h2>Comments</h2>
-<textarea placeholder="Write your comment..."></textarea>
-
-<button onclick="alert('Comment submitted (demo only)')">Post Comment</button>
-
-<hr>
-
-<h2>Subscribe</h2>
-<input type="email" placeholder="Enter email">
-<button>Subscribe</button>
-
-<script>
-let c = 0;
-function like(){
-  c++;
-  document.getElementById("count").innerText = c;
-}
-</script>
 
 </body>
 </html>
