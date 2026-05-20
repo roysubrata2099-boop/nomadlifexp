@@ -18,9 +18,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Poppins',sans-serif;background:#000;color:#fff;overflow-x:hidden;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
+body{
+  font-family:'Poppins',sans-serif;
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* NAV */
 nav{
   width:100%;
   padding:20px 8%;
@@ -34,18 +45,27 @@ nav{
   align-items:center;
 }
 
-.logo-text{font-size:28px;font-weight:800;}
-
-.gradient{
-  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+.logo-text{
+  font-size:28px;
+  font-weight:800;
 }
 
-nav ul{display:flex;list-style:none;}
-nav ul li{margin-left:25px;}
-nav ul li a{color:white;text-decoration:none;font-weight:600;}
+nav ul{
+  display:flex;
+  list-style:none;
+}
 
+nav ul li{
+  margin-left:25px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* HERO */
 .hero{
   height:100vh;
   display:flex;
@@ -54,7 +74,9 @@ nav ul li a{color:white;text-decoration:none;font-weight:600;}
   align-items:center;
   text-align:center;
   padding:20px;
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
   url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1500&q=80")
   center/cover no-repeat;
 }
@@ -62,12 +84,23 @@ nav ul li a{color:white;text-decoration:none;font-weight:600;}
 .logo{
   width:120px;
   margin-bottom:20px;
-  filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+  border-radius:50%;
 }
 
-.hero h1{font-size:65px;max-width:900px;}
-.hero p{max-width:700px;margin-top:20px;color:#ddd;line-height:1.8;font-size:20px;}
+.hero h1{
+  font-size:65px;
+  max-width:900px;
+}
 
+.hero p{
+  max-width:700px;
+  margin-top:20px;
+  color:#ddd;
+  line-height:1.8;
+  font-size:20px;
+}
+
+/* BUTTON */
 .btn{
   display:inline-block;
   margin-top:25px;
@@ -81,24 +114,52 @@ nav ul li a{color:white;text-decoration:none;font-weight:600;}
   transition:0.3s;
 }
 
-.btn:hover{transform:scale(1.05);}
+.btn:hover{
+  transform:scale(1.05);
+}
 
-.section{padding:100px 8%;}
-.center{text-align:center;max-width:900px;margin:auto;}
-.center h2{font-size:50px;margin-bottom:25px;}
-.center p{color:#ccc;line-height:1.9;font-size:18px;}
+/* SECTION */
+.section{
+  padding:100px 8%;
+}
 
+.center{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+}
+
+.center h2{
+  font-size:50px;
+  margin-bottom:25px;
+}
+
+.center p{
+  color:#ccc;
+  line-height:1.9;
+  font-size:18px;
+}
+
+/* FOOTER */
 footer{
   text-align:center;
   padding:40px;
   border-top:1px solid #111;
 }
 
-footer p{color:#777;}
+footer p{
+  color:#777;
+}
 
+/* RESPONSIVE */
 @media(max-width:900px){
-nav{flex-direction:column;gap:20px;}
-.hero h1{font-size:45px;}
+nav{
+  flex-direction:column;
+  gap:20px;
+}
+.hero h1{
+  font-size:45px;
+}
 }
 </style>
 </head>
@@ -107,7 +168,7 @@ nav{flex-direction:column;gap:20px;}
 
 <!-- NAVBAR -->
 <nav>
-  <div class="logo-text gradient">NomadLifeXP</div>
+  <div class="logo-text">NomadLifeXP</div>
 
   <ul>
     <li><a href="/">Home</a></li>
@@ -121,12 +182,12 @@ nav{flex-direction:column;gap:20px;}
 <!-- HERO -->
 <section class="hero">
 
-  <!-- Safe placeholder logo -->
+  <!-- SAFE LOGO (NEVER BREAKS) -->
   <img class="logo"
        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-       alt="NomadLifeXP Logo">
+       alt="Logo">
 
-  <h1 class="gradient">NomadLifeXP — Evolve in Motion</h1>
+  <h1>NomadLifeXP — Evolve in Motion</h1>
 
   <p>From chaos to clarity. Transform your mind, body, and spirit — one step at a time.</p>
 
@@ -137,17 +198,17 @@ nav{flex-direction:column;gap:20px;}
 
 </section>
 
-<!-- BLOG SECTION -->
+<!-- BLOG LINKS -->
 <section class="section center">
 
-  <h2 class="gradient">Read the Blog</h2>
+  <h2>Read the Blog</h2>
 
   <p>Explore transformation stories, mindset lessons, fitness journeys, and growth.</p>
 
   <a class="btn" href="blog.html">Blog</a>
-  <a class="btn" href="fitness-consistency.html">Fitness Guide</a>
-  <a class="btn" href="discipline-blog.html">Discipline Blog</a>
-  <a class="btn" href="discipline-creates-freedom.html">Discipline Creates Freedom</a>
+  <a class="btn" href="fitness-consistency.html">Fitness</a>
+  <a class="btn" href="discipline-blog.html">Discipline</a>
+  <a class="btn" href="discipline-creates-freedom.html">Freedom</a>
 
 </section>
 
@@ -161,11 +222,6 @@ nav{flex-direction:column;gap:20px;}
     <a class="btn" href="fitness-consistency.html">Fitness</a>
     <a class="btn" href="discipline-blog.html">Discipline</a>
     <a class="btn" href="discipline-creates-freedom.html">Freedom</a>
-  </div>
-
-  <div style="margin-top:20px;">
-    <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
-    <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
   </div>
 
 </footer>
