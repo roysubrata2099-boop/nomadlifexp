@@ -50,6 +50,13 @@ nav{
   font-weight:800;
 }
 
+/* GRADIENT */
+.gradient{
+  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
 nav ul{
   display:flex;
   list-style:none;
@@ -77,14 +84,15 @@ nav ul li a{
 
   background:
   linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-  url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1500&q=80")
-  center/cover no-repeat;
+  url("hero.jpg") center/cover no-repeat;
 }
 
+/* LOGO */
 .logo{
   width:120px;
   margin-bottom:20px;
   border-radius:50%;
+  box-shadow:0 0 20px rgba(255,255,255,0.2);
 }
 
 .hero h1{
@@ -118,7 +126,7 @@ nav ul li a{
   transform:scale(1.05);
 }
 
-/* SECTION */
+/* SECTIONS */
 .section{
   padding:100px 8%;
 }
@@ -157,6 +165,7 @@ nav{
   flex-direction:column;
   gap:20px;
 }
+
 .hero h1{
   font-size:45px;
 }
@@ -168,7 +177,7 @@ nav{
 
 <!-- NAVBAR -->
 <nav>
-  <div class="logo-text">NomadLifeXP</div>
+  <div class="logo-text gradient">NomadLifeXP</div>
 
   <ul>
     <li><a href="/">Home</a></li>
@@ -182,12 +191,10 @@ nav{
 <!-- HERO -->
 <section class="hero">
 
-  <!-- SAFE LOGO (NEVER BREAKS) -->
-  <img class="logo"
-       src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-       alt="Logo">
+  <!-- YOUR REAL LOGO -->
+  <img src="logo.png" class="logo" alt="NomadLifeXP Logo">
 
-  <h1>NomadLifeXP — Evolve in Motion</h1>
+  <h1 class="gradient">NomadLifeXP — Evolve in Motion</h1>
 
   <p>From chaos to clarity. Transform your mind, body, and spirit — one step at a time.</p>
 
@@ -198,17 +205,17 @@ nav{
 
 </section>
 
-<!-- BLOG LINKS -->
+<!-- BLOG SECTION -->
 <section class="section center">
 
-  <h2>Read the Blog</h2>
+  <h2 class="gradient">Read the Blog</h2>
 
   <p>Explore transformation stories, mindset lessons, fitness journeys, and growth.</p>
 
   <a class="btn" href="blog.html">Blog</a>
-  <a class="btn" href="fitness-consistency.html">Fitness</a>
-  <a class="btn" href="discipline-blog.html">Discipline</a>
-  <a class="btn" href="discipline-creates-freedom.html">Freedom</a>
+  <a class="btn" href="fitness-consistency.html">Fitness Guide</a>
+  <a class="btn" href="discipline-blog.html">Discipline Blog</a>
+  <a class="btn" href="discipline-creates-freedom.html">Discipline Creates Freedom</a>
 
 </section>
 
