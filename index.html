@@ -55,10 +55,16 @@ nav ul li a{color:white;text-decoration:none;font-weight:600;}
   text-align:center;
   padding:20px;
   background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-  url("https://nomadlifexp.com/hero.jpg") center/cover no-repeat;
+  url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1500&q=80")
+  center/cover no-repeat;
 }
 
-.logo{width:130px;margin-bottom:20px;}
+.logo{
+  width:120px;
+  margin-bottom:20px;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+}
+
 .hero h1{font-size:65px;max-width:900px;}
 .hero p{max-width:700px;margin-top:20px;color:#ddd;line-height:1.8;font-size:20px;}
 
@@ -115,7 +121,10 @@ nav{flex-direction:column;gap:20px;}
 <!-- HERO -->
 <section class="hero">
 
-  <img src="https://nomadlifexp.com/logo.png" class="logo">
+  <!-- Safe placeholder logo -->
+  <img class="logo"
+       src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+       alt="NomadLifeXP Logo">
 
   <h1 class="gradient">NomadLifeXP — Evolve in Motion</h1>
 
