@@ -1,6 +1,9 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,6 +12,17 @@
 <meta name="description" content="NomadLifeXP blog about yoga, fitness, discipline, mindfulness, breath control, and self improvement for mental clarity and daily transformation.">
 
 <meta name="keywords" content="yoga blog, fitness consistency, discipline, self improvement, mental clarity, breath control, mindfulness, habit building">
+
+<link rel="canonical" href="https://nomadlifexp.com/blog.html">
+
+<meta property="og:title" content="NomadLifeXP Blog | Yoga, Fitness & Discipline">
+<meta property="og:description" content="Yoga, mindfulness, breath awareness, discipline, and self improvement reflections.">
+<meta property="og:image" content="https://nomadlifexp.com/images/headstand.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nomadlifexp.com/blog.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
@@ -24,8 +38,15 @@ body{
 nav{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   padding:20px 8%;
   background:#111;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
 }
 
 .gradient{
@@ -54,6 +75,8 @@ nav{
 
 .post img{
   width:40%;
+  height:auto;
+  max-height:420px;
   border-radius:15px;
   object-fit:cover;
 }
@@ -89,80 +112,199 @@ nav{
 }
 
 @media(max-width:900px){
+
+  .section{
+    padding:30px 5%;
+  }
+
   .post{
     flex-direction:column;
+    padding:18px;
+    gap:20px;
   }
 
   .post img,
   .post-content{
     width:100%;
   }
+
+  .post-content h2{
+    font-size:22px;
+  }
+
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
+
   <h2 class="gradient">NomadLifeXP Blog</h2>
+
+  <a href="index.html">Home</a>
+
 </nav>
 
 <div class="section">
 
   <!-- BLOG 1 -->
   <div class="post">
-    <img src="images/fitness.jpg" alt="Fitness consistency motivation">
+
+    <img 
+      src="images/fitness.jpg"
+      alt="Fitness consistency motivation"
+      loading="lazy"
+      width="1200"
+      height="800"
+    >
+
     <div class="post-content">
-      <h2 class="gradient">Why Fitness Consistency Matters More Than Motivation</h2>
-      <p>Real transformation comes from consistency, not motivation.</p>
-      <a class="btn" href="fitness-consistency.html">Read More</a>
+
+      <h2 class="gradient">
+        Why Fitness Consistency Matters More Than Motivation
+      </h2>
+
+      <p>
+        Real transformation comes from consistency, not motivation.
+      </p>
+
+      <a class="btn" href="fitness-consistency.html">
+        Read More
+      </a>
+
     </div>
+
   </div>
 
   <!-- BLOG 2 -->
   <div class="post">
-    <img src="images/yoga2.jpg" alt="Yoga discipline practice">
+
+    <img 
+      src="images/yoga2.jpg"
+      alt="Yoga discipline practice"
+      loading="lazy"
+      width="1200"
+      height="800"
+    >
+
     <div class="post-content">
-      <h2 class="gradient">Until You Realize This About Discipline Everything Changes</h2>
-      <p>Discipline is the price of freedom and clarity.</p>
-      <a class="btn" href="discipline-blog.html">Read More</a>
+
+      <h2 class="gradient">
+        Until You Realize This About Discipline Everything Changes
+      </h2>
+
+      <p>
+        Discipline is the price of freedom and clarity.
+      </p>
+
+      <a class="btn" href="discipline-blog.html">
+        Read More
+      </a>
+
     </div>
+
   </div>
 
   <!-- BLOG 3 -->
   <div class="post">
-    <img src="images/yoga-new.jpg" alt="Yoga discipline freedom">
+
+    <img 
+      src="images/yoga-new.jpg"
+      alt="Yoga discipline freedom"
+      loading="lazy"
+      width="1200"
+      height="800"
+    >
+
     <div class="post-content">
-      <h2 class="gradient">Discipline Creates Freedom and Most People Never Realize Why</h2>
-      <p>Step away from chaos and something inside you starts to change.</p>
-      <a class="btn" href="discipline-creates-freedom.html">Read More</a>
+
+      <h2 class="gradient">
+        Discipline Creates Freedom and Most People Never Realize Why
+      </h2>
+
+      <p>
+        Step away from chaos and something inside you starts to change.
+      </p>
+
+      <a class="btn" href="discipline-creates-freedom.html">
+        Read More
+      </a>
+
     </div>
+
   </div>
 
   <!-- BLOG 4 -->
   <div class="post">
-    <img src="images/forward-bend.jpg" alt="Forward bending yoga benefits">
+
+    <img 
+      src="images/forward-bend.jpg"
+      alt="Forward bending yoga benefits"
+      loading="lazy"
+      width="1200"
+      height="800"
+    >
+
     <div class="post-content">
-      <h2 class="gradient">It’s Never Too Late to Transform Your Body and Mind Through Forward Bending</h2>
-      <p>Simple movement can unlock deep physical and mental release.</p>
-      <a class="btn" href="forward-bending.html">Read More</a>
+
+      <h2 class="gradient">
+        It’s Never Too Late to Transform Your Body and Mind Through Forward Bending
+      </h2>
+
+      <p>
+        Simple movement can unlock deep physical and mental release.
+      </p>
+
+      <a class="btn" href="forward-bending.html">
+        Read More
+      </a>
+
     </div>
+
   </div>
 
   <!-- BLOG 5 -->
   <div class="post">
-    <img src="images/forearm-stand.jpg" alt="Forearm stand yoga strength">
+
+    <img 
+      src="images/forearm-stand.jpg"
+      alt="Forearm stand yoga strength"
+      loading="lazy"
+      width="1200"
+      height="800"
+    >
+
     <div class="post-content">
-      <h2 class="gradient">Nothing Changes Until You Realize What One Yoga Pose Can Do</h2>
-      <p>Forearm stand builds focus, control, and inner strength.</p>
-      <a class="btn" href="forearm-stand.html">Read More</a>
+
+      <h2 class="gradient">
+        Nothing Changes Until You Realize What One Yoga Pose Can Do
+      </h2>
+
+      <p>
+        Forearm stand builds focus, control, and inner strength.
+      </p>
+
+      <a class="btn" href="forearm-stand.html">
+        Read More
+      </a>
+
     </div>
+
   </div>
 
-  <!-- BLOG 6 (HEADSTAND) -->
+  <!-- BLOG 6 -->
   <div class="post">
-    <img src="images/headstand.jpg" alt="Headstand yoga mental stability">
+
+    <img 
+      src="images/headstand.jpg"
+      alt="Headstand yoga mental stability"
+      loading="lazy"
+      width="1200"
+      height="800"
+    >
 
     <div class="post-content">
 
@@ -171,19 +313,28 @@ nav{
       </h2>
 
       <p>
-        Breath is Power and Awareness is Transformation.<br><br>
-        Headstand builds mental stability under pressure. Stillness reveals what the mind hides.
+        Breath is Power and Awareness is Transformation.
+        Headstand builds mental stability under pressure.
       </p>
 
-      <a class="btn" href="headstand.html">Read More</a>
+      <a class="btn" href="headstand.html">
+        Read More
+      </a>
+
     </div>
 
   </div>
 
-  <!-- BLOG 7 (COBRA POSE ADDED) -->
+  <!-- BLOG 7 -->
   <div class="post">
 
-    <img src="images/yogapose1.jpg" alt="Cobra pose yoga for spine flexibility and breath awareness" loading="lazy">
+    <img 
+      src="images/yogapose1.jpg"
+      alt="Cobra pose yoga for spine flexibility and breath awareness"
+      loading="lazy"
+      width="1200"
+      height="800"
+    >
 
     <div class="post-content">
 
@@ -195,7 +346,9 @@ nav{
         Most people are not lost. They are just comfortable in patterns they repeat every day.
       </p>
 
-      <a class="btn" href="stuck-in-life.html">Read More</a>
+      <a class="btn" href="stuck-in-life.html">
+        Read More
+      </a>
 
     </div>
 
@@ -205,3 +358,4 @@ nav{
 
 </body>
 </html>
+```
