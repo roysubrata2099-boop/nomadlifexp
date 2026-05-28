@@ -6,19 +6,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NomadLifeXP Blog | Yoga, Fitness & Discipline</title>
+<title>NomadLifeXP Blog | Yoga, Fitness, Discipline & Mindfulness</title>
 
-<meta name="description" content="Yoga, fitness, discipline, breath awareness, mindfulness, and self-improvement reflections for mental clarity and transformation.">
-
-<meta name="keywords" content="yoga blog, fitness consistency, discipline, self improvement, mental clarity, breath awareness, mindfulness, yoga transformation, breathing exercises">
-
-<link rel="canonical" href="https://nomadlifexp.com/blog.html">
+<meta name="description" content="Explore yoga, fitness, discipline, breath awareness, and mindfulness blogs designed for mental clarity, self-improvement, and daily transformation.">
 
 <meta name="robots" content="index, follow">
 
+<link rel="canonical" href="https://nomadlifexp.com/blog.html">
+
 <meta property="og:title" content="NomadLifeXP Blog | Yoga, Fitness & Discipline">
-<meta property="og:description" content="Yoga, mindfulness, discipline, breath awareness, and self improvement reflections.">
-<meta property="og:image" content="https://nomadlifexp.com/images/headstand.jpg">
+<meta property="og:description" content="Yoga, fitness, discipline, breath awareness, and mindfulness insights for transformation.">
+<meta property="og:image" content="https://nomadlifexp.com/images/yogapose1.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nomadlifexp.com/blog.html">
 
@@ -28,6 +26,7 @@
 
 <style>
 
+/* RESET */
 *{
   margin:0;
   padding:0;
@@ -44,192 +43,186 @@ body{
 nav{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   padding:20px 8%;
   background:#111;
 }
 
-nav h2{
-  font-size:18px;
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
 }
 
-/* H1 SEO TITLE */
-.page-title{
-  text-align:center;
-  font-size:28px;
-  margin:30px 0;
-  font-weight:600;
+/* TITLE */
+.gradient{
+  background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 /* SECTION */
 .section{
-  padding:40px 8%;
+  padding:50px 8%;
 }
 
 /* BLOG CARD */
 .post{
   display:flex;
-  gap:18px;
-  margin-bottom:30px;
+  gap:25px;
+  margin-bottom:50px;
   background:#0b0b0b;
-  padding:16px;
-  border-radius:16px;
-  align-items:center;
+  padding:20px;
+  border-radius:18px;
   transition:0.3s ease;
 }
 
 .post:hover{
-  transform:translateY(-3px);
+  transform:translateY(-4px);
 }
 
-/* IMAGE (SMALL FRAME + FULL IMAGE) */
+/* IMAGE FIX: SMALL BUT FULL VISIBLE */
 .post img{
-  width:140px;
-  height:140px;
-  object-fit:contain;
+  width:35%;
+  height:220px;
+  object-fit:contain;   /* IMPORTANT: NO CROPPING */
   background:#111;
-  padding:6px;
+  padding:8px;
   border-radius:12px;
-  flex-shrink:0;
 }
 
 /* CONTENT */
 .post-content{
-  flex:1;
+  width:65%;
 }
 
 .post-content h2{
-  font-size:18px;
-  margin-bottom:6px;
+  font-size:20px;
+  margin-bottom:10px;
   line-height:1.3;
 }
 
 .post-content p{
   font-size:14px;
   opacity:0.85;
-  line-height:1.5;
+  line-height:1.6;
 }
 
 /* BUTTON */
 .btn{
   display:inline-block;
-  margin-top:10px;
+  margin-top:12px;
   padding:10px 18px;
   border-radius:25px;
   background:linear-gradient(90deg,#a855f7,#f97316);
   color:white;
   text-decoration:none;
-  font-size:13px;
+  font-size:14px;
   font-weight:600;
 }
 
 /* MOBILE */
 @media(max-width:900px){
-
-  .section{
-    padding:25px 5%;
-  }
-
   .post{
     flex-direction:column;
-    align-items:flex-start;
   }
 
   .post img{
     width:100%;
     height:auto;
-    max-height:260px;
   }
 
-  .post-content h2{
-    font-size:17px;
+  .post-content{
+    width:100%;
   }
-
 }
 
 </style>
-
-<!-- BLOG SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "NomadLifeXP Blog",
-  "url": "https://nomadlifexp.com/blog.html",
-  "description": "Yoga, fitness, discipline, mindfulness and self-growth articles for mental clarity and transformation."
-}
-</script>
 
 </head>
 
 <body>
 
 <nav>
-  <h2>NomadLifeXP Blog</h2>
+  <h2 class="gradient">NomadLifeXP Blog</h2>
+  <a href="index.html">Home</a>
 </nav>
-
-<h1 class="page-title">Yoga, Fitness & Mindfulness Blog</h1>
 
 <div class="section">
 
+  <!-- BLOG 1 -->
   <div class="post">
     <img src="images/fitness.jpg" alt="Fitness consistency motivation">
+
     <div class="post-content">
-      <h2>Why Fitness Consistency Beats Motivation</h2>
+      <h2>Why Fitness Consistency Matters More Than Motivation</h2>
       <p>Real transformation comes from consistency, not motivation.</p>
-      <a class="btn" href="fitness-consistency.html">Read More → Fitness</a>
+      <a class="btn" href="fitness-consistency.html">Read More</a>
     </div>
   </div>
 
+  <!-- BLOG 2 -->
   <div class="post">
     <img src="images/yoga2.jpg" alt="Yoga discipline practice">
+
     <div class="post-content">
-      <h2>Discipline Changes Everything in Life</h2>
-      <p>Discipline is the price of freedom and clarity.</p>
-      <a class="btn" href="discipline-blog.html">Read More → Discipline</a>
+      <h2>Until You Realize This About Discipline Everything Changes</h2>
+      <p>Discipline builds freedom, clarity, and inner control.</p>
+      <a class="btn" href="discipline-blog.html">Read More</a>
     </div>
   </div>
 
+  <!-- BLOG 3 -->
   <div class="post">
     <img src="images/yoga-new.jpg" alt="Yoga discipline freedom">
+
     <div class="post-content">
-      <h2>Discipline Creates True Freedom</h2>
-      <p>Step away from chaos and something inside you starts to change.</p>
+      <h2>Discipline Creates Freedom and Most People Never Realize Why</h2>
+      <p>Step away from chaos and mental noise to find clarity.</p>
       <a class="btn" href="discipline-creates-freedom.html">Read More</a>
     </div>
   </div>
 
+  <!-- BLOG 4 -->
   <div class="post">
     <img src="images/forward-bend.jpg" alt="Forward bending yoga benefits">
+
     <div class="post-content">
-      <h2>Transform Body & Mind Through Forward Bending</h2>
-      <p>Simple movement can unlock deep physical and mental release.</p>
+      <h2>Forward Bending: Unlock Body and Mind Release</h2>
+      <p>Simple movement improves flexibility and mental calmness.</p>
       <a class="btn" href="forward-bending.html">Read More</a>
     </div>
   </div>
 
+  <!-- BLOG 5 -->
   <div class="post">
     <img src="images/forearm-stand.jpg" alt="Forearm stand yoga strength">
+
     <div class="post-content">
-      <h2>One Yoga Pose Can Change Your Focus</h2>
-      <p>Forearm stand builds control, strength, and awareness.</p>
+      <h2>What One Yoga Pose Can Do for Focus and Strength</h2>
+      <p>Forearm stand builds discipline, control, and stability.</p>
       <a class="btn" href="forearm-stand.html">Read More</a>
     </div>
   </div>
 
+  <!-- BLOG 6 -->
   <div class="post">
     <img src="images/headstand.jpg" alt="Headstand yoga mental stability">
+
     <div class="post-content">
-      <h2>What Happens When the Mind Becomes Still</h2>
-      <p>Breath is Power and Awareness is Transformation.</p>
+      <h2>Stillness Changes Everything in the Mind</h2>
+      <p>Breath awareness creates deep mental clarity under pressure.</p>
       <a class="btn" href="headstand.html">Read More</a>
     </div>
   </div>
 
+  <!-- BLOG 7 -->
   <div class="post">
     <img src="images/yogapose1.jpg" alt="Cobra pose yoga spine awareness">
+
     <div class="post-content">
       <h2>You Are Not Stuck Because You Lack Answers</h2>
-      <p>Most people are not lost. They are just comfortable in patterns.</p>
+      <p>Most people are trapped in repeating mental patterns, not reality.</p>
       <a class="btn" href="stuck-in-life.html">Read More</a>
     </div>
   </div>
