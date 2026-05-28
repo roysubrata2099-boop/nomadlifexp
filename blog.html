@@ -8,11 +8,13 @@
 
 <title>NomadLifeXP Blog | Yoga, Fitness & Discipline</title>
 
-<meta name="description" content="NomadLifeXP blog about yoga, fitness, discipline, mindfulness, breath control, self improvement, mental clarity, and yoga transformation.">
+<meta name="description" content="Yoga, fitness, discipline, breath awareness, mindfulness, and self-improvement reflections for mental clarity and daily transformation.">
 
 <meta name="keywords" content="yoga blog, fitness consistency, discipline, self improvement, mental clarity, breath awareness, mindfulness, yoga transformation, breathing exercises">
 
 <link rel="canonical" href="https://nomadlifexp.com/blog.html">
+
+<meta name="robots" content="index, follow">
 
 <meta property="og:title" content="NomadLifeXP Blog | Yoga, Fitness & Discipline">
 <meta property="og:description" content="Yoga, mindfulness, discipline, breath awareness, and self improvement reflections.">
@@ -20,10 +22,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nomadlifexp.com/blog.html">
 
-<link rel="icon" type="image/png" href="images/favicon.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="images/favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
@@ -48,7 +47,6 @@ body{
 nav{
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:20px 8%;
   background:#111;
 }
@@ -56,7 +54,6 @@ nav{
 nav a{
   color:#fff;
   text-decoration:none;
-  font-size:15px;
 }
 
 .gradient{
@@ -76,20 +73,15 @@ nav a{
   background:#0b0b0b;
   padding:25px;
   border-radius:20px;
-  transition:0.3s ease;
-}
-
-.post:hover{
-  transform:translateY(-5px);
 }
 
 .post img{
   width:40%;
-  height:auto;
-  max-height:420px;
+  height:320px;
+  object-fit:contain;
+  background:#111;
   border-radius:15px;
-  object-fit:cover;
-  object-position:top;
+  padding:10px;
 }
 
 .post-content{
@@ -99,7 +91,6 @@ nav a{
 .post-content h2{
   font-size:24px;
   margin-bottom:12px;
-  line-height:1.3;
 }
 
 .post-content p{
@@ -109,14 +100,12 @@ nav a{
 
 .btn{
   display:inline-block;
-  margin-top:18px;
-  padding:12px 24px;
+  margin-top:15px;
+  padding:12px 22px;
   border-radius:30px;
   background:linear-gradient(90deg,#a855f7,#f97316);
   color:white;
   text-decoration:none;
-  font-weight:600;
-  transition:0.3s ease;
 }
 
 .btn:hover{
@@ -124,30 +113,18 @@ nav a{
 }
 
 @media(max-width:900px){
-
-  .section{
-    padding:30px 5%;
-  }
-
   .post{
     flex-direction:column;
-    padding:18px;
-    gap:20px;
-  }
-
-  .post img,
-  .post-content{
-    width:100%;
   }
 
   .post img{
-    max-height:320px;
+    width:100%;
+    height:auto;
   }
 
-  .post-content h2{
-    font-size:22px;
+  .post-content{
+    width:100%;
   }
-
 }
 
 </style>
@@ -158,15 +135,14 @@ nav a{
 
 <nav>
   <h2 class="gradient">NomadLifeXP Blog</h2>
-  <a href="index.html">Home</a>
 </nav>
 
 <div class="section">
 
   <div class="post">
-    <img src="images/fitness.jpg" alt="Fitness consistency motivation" style="object-position:top;">
+    <img src="images/fitness.jpg" alt="Fitness consistency motivation">
     <div class="post-content">
-      <h2 class="gradient">Why Fitness Consistency Matters More Than Motivation</h2>
+      <h2>Why Fitness Consistency Matters More Than Motivation</h2>
       <p>Real transformation comes from consistency, not motivation.</p>
       <a class="btn" href="fitness-consistency.html">Read More</a>
     </div>
@@ -175,7 +151,7 @@ nav a{
   <div class="post">
     <img src="images/yoga2.jpg" alt="Yoga discipline practice">
     <div class="post-content">
-      <h2 class="gradient">Until You Realize This About Discipline Everything Changes</h2>
+      <h2>Until You Realize This About Discipline Everything Changes</h2>
       <p>Discipline is the price of freedom and clarity.</p>
       <a class="btn" href="discipline-blog.html">Read More</a>
     </div>
@@ -184,7 +160,7 @@ nav a{
   <div class="post">
     <img src="images/yoga-new.jpg" alt="Yoga discipline freedom">
     <div class="post-content">
-      <h2 class="gradient">Discipline Creates Freedom and Most People Never Realize Why</h2>
+      <h2>Discipline Creates Freedom and Most People Never Realize Why</h2>
       <p>Step away from chaos and something inside you starts to change.</p>
       <a class="btn" href="discipline-creates-freedom.html">Read More</a>
     </div>
@@ -193,7 +169,7 @@ nav a{
   <div class="post">
     <img src="images/forward-bend.jpg" alt="Forward bending yoga benefits">
     <div class="post-content">
-      <h2 class="gradient">It’s Never Too Late to Transform Your Body and Mind Through Forward Bending</h2>
+      <h2>It’s Never Too Late to Transform Your Body and Mind Through Forward Bending</h2>
       <p>Simple movement can unlock deep physical and mental release.</p>
       <a class="btn" href="forward-bending.html">Read More</a>
     </div>
@@ -202,7 +178,7 @@ nav a{
   <div class="post">
     <img src="images/forearm-stand.jpg" alt="Forearm stand yoga strength">
     <div class="post-content">
-      <h2 class="gradient">Nothing Changes Until You Realize What One Yoga Pose Can Do</h2>
+      <h2>Nothing Changes Until You Realize What One Yoga Pose Can Do</h2>
       <p>Forearm stand builds focus, control, and inner strength.</p>
       <a class="btn" href="forearm-stand.html">Read More</a>
     </div>
@@ -211,8 +187,8 @@ nav a{
   <div class="post">
     <img src="images/headstand.jpg" alt="Headstand yoga mental stability">
     <div class="post-content">
-      <h2 class="gradient">What Happens in Your Mind When Everything Becomes Still</h2>
-      <p>Breath is Power and Awareness is Transformation. Headstand builds mental stability under pressure.</p>
+      <h2>What Happens in Your Mind When Everything Becomes Still</h2>
+      <p>Breath is Power and Awareness is Transformation.</p>
       <a class="btn" href="headstand.html">Read More</a>
     </div>
   </div>
@@ -220,7 +196,7 @@ nav a{
   <div class="post">
     <img src="images/yogapose1.jpg" alt="Cobra pose yoga spine awareness">
     <div class="post-content">
-      <h2 class="gradient">You Are Not Stuck Because You Lack Answers</h2>
+      <h2>You Are Not Stuck Because You Lack Answers</h2>
       <p>Most people are not lost. They are just comfortable in patterns they repeat every day.</p>
       <a class="btn" href="stuck-in-life.html">Read More</a>
     </div>
