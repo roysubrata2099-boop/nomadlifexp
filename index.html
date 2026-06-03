@@ -179,10 +179,25 @@ footer{
 .hero h1{font-size:40px;}
 .hero h2{font-size:20px;}
 }
+
+/* ✅ SEO FIX (HIDDEN H1 FOR BING) */
+.seo-hidden-h1{
+  position:absolute;
+  left:-9999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 </style>
 </head>
 
 <body>
+
+<!-- ✅ FIXED SEO H1 (Bing can now detect main topic) -->
+<h1 class="seo-hidden-h1">
+NomadLifeXP — Self Growth, Discipline, Fitness, Yoga, Mindful Movement
+</h1>
 
 <!-- NAV -->
 <nav>
@@ -219,7 +234,7 @@ footer{
 
 </section>
 
-<!-- ABOUT (SEO + TOPICAL AUTHORITY CORE) -->
+<!-- ABOUT -->
 <section class="section center">
 
   <h2 class="gradient">What is NomadLifeXP?</h2>
@@ -241,7 +256,7 @@ footer{
 
 </section>
 
-<!-- TOPICAL AUTHORITY CLUSTERS -->
+<!-- TOPICAL AUTHORITY -->
 <section class="section center">
 
   <h2 class="gradient">Core Transformation Areas</h2>
@@ -257,7 +272,7 @@ footer{
 
 </section>
 
-<!-- INTERNAL LINK HUB -->
+<!-- LINKS -->
 <section class="section center">
 
   <h2 class="gradient">Start Your Self Growth Journey</h2>
