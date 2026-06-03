@@ -1,32 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-
+<!-- ================= HOME (MAIN AUTHORITY) ================= -->
 <url>
   <loc>https://nomadlifexp.com/</loc>
   <lastmod>2026-05-14T12:03:08+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+
+<!-- ================= BLOG HUB ================= -->
 <url>
   <loc>https://nomadlifexp.com/blog.html</loc>
   <lastmod>2026-05-14T12:03:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
-<url>
-  <loc>https://nomadlifexp.com/fitness-consistency.html</loc>
-  <lastmod>2026-05-14T12:03:08+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
+<!-- ================= DISCIPLINE CLUSTER (HIGH AUTHORITY TOPIC) ================= -->
 <url>
   <loc>https://nomadlifexp.com/discipline-blog.html</loc>
   <lastmod>2026-05-14T12:03:08+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.85</priority>
 </url>
 
+<url>
+  <loc>https://nomadlifexp.com/discipline-creates-freedom.html</loc>
+  <lastmod>2026-05-14T12:03:08+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+
+<!-- ================= FITNESS CLUSTER ================= -->
+<url>
+  <loc>https://nomadlifexp.com/fitness-consistency.html</loc>
+  <lastmod>2026-05-14T12:03:08+00:00</lastmod>
+  <priority>0.82</priority>
+</url>
+
+<!-- ================= YOGA / MOVEMENT CLUSTER ================= -->
+<url>
+  <loc>https://nomadlifexp.com/headstand.html</loc>
+  <lastmod>2026-05-14T12:03:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://nomadlifexp.com/forearm-stand.html</loc>
+  <lastmod>2026-05-14T12:03:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://nomadlifexp.com/forward-bending.html</loc>
+  <lastmod>2026-05-14T12:03:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- ================= MINDSET / SELF GROWTH ================= -->
+<url>
+  <loc>https://nomadlifexp.com/stuck-in-life.html</loc>
+  <lastmod>2026-05-14T12:03:08+00:00</lastmod>
+  <priority>0.78</priority>
+</url>
 
 </urlset>
