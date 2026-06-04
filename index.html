@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,55 @@
 
 <meta name="description" content="NomadLifeXP is a self-growth platform focused on discipline, fitness consistency, yoga, mindful movement, and mental strength. Build habits, improve focus, and transform your life through structured personal growth systems.">
 
-<meta name="robots" content="index, follow">
+<!-- ✅ ROBOTS META TAG -->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
 <link rel="canonical" href="https://nomadlifexp.com/">
 
 <!-- Open Graph -->
 <meta property="og:title" content="NomadLifeXP — Self Growth System for Discipline, Fitness & Mindful Living">
 <meta property="og:description" content="Build discipline, fitness consistency, yoga practice, mindful movement, and mental strength through structured systems.">
-<meta property="og:image" content="hero.jpg">
+<meta property="og:image" content="https://nomadlifexp.com/hero.jpg">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://nomadlifexp.com/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NomadLifeXP — Self Growth System">
+<meta name="twitter:description" content="Build discipline, fitness consistency, yoga, and mental strength through structured systems.">
+<meta name="twitter:image" content="https://nomadlifexp.com/hero.jpg">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<!-- ✅ STRUCTURED DATA (IMPORTANT FOR INDEX PAGE) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NomadLifeXP",
+  "url": "https://nomadlifexp.com/",
+  "description": "Self-growth platform focused on discipline, fitness consistency, yoga, and mindful living.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://nomadlifexp.com/blog.html?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NomadLifeXP",
+  "url": "https://nomadlifexp.com/",
+  "logo": "https://nomadlifexp.com/logo.png",
+  "sameAs": [
+    "https://www.youtube.com/@nomadlifexp",
+    "https://www.instagram.com/nomadlifexp/"
+  ]
+}
+</script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -59,9 +99,7 @@ nav ul{
   list-style:none;
 }
 
-nav ul li{
-  margin-left:25px;
-}
+nav ul li{margin-left:25px;}
 
 nav ul li a{
   color:white;
@@ -78,52 +116,22 @@ nav ul li a{
   align-items:center;
   text-align:center;
   padding:20px;
-
   background:
   linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.88)),
   url("hero.jpg") center/cover no-repeat;
 }
 
-/* LOGO */
 .logo{
   width:120px;
   margin-bottom:20px;
   border-radius:50%;
-  box-shadow:0 0 20px rgba(255,255,255,0.12);
 }
 
-/* H1 FIXED */
-.hero h1{
-  font-size:60px;
-  max-width:900px;
-}
+.hero h1{font-size:60px;max-width:900px;}
+.hero h2{font-size:26px;margin-top:15px;color:#ddd;}
+.hero h3{font-size:18px;margin-top:10px;color:#bbb;}
+.hero p{max-width:850px;margin-top:18px;color:#ccc;line-height:1.8;font-size:18px;}
 
-/* H2 BRAND TAGLINE */
-.hero h2{
-  font-size:26px;
-  margin-top:15px;
-  color:#ddd;
-  max-width:900px;
-}
-
-/* H3 KEYWORD CLUSTER */
-.hero h3{
-  font-size:18px;
-  margin-top:10px;
-  color:#bbb;
-  font-weight:400;
-}
-
-/* TEXT */
-.hero p{
-  max-width:850px;
-  margin-top:18px;
-  color:#ccc;
-  line-height:1.8;
-  font-size:18px;
-}
-
-/* BUTTON */
 .btn{
   display:inline-block;
   margin-top:25px;
@@ -136,32 +144,14 @@ nav ul li a{
   background:linear-gradient(90deg,#a855f7,#f97316);
   transition:0.3s;
 }
-
 .btn:hover{transform:scale(1.05);}
 
-/* SECTIONS */
-.section{
-  padding:90px 8%;
-}
+.section{padding:90px 8%;}
+.center{text-align:center;max-width:950px;margin:auto;}
 
-.center{
-  text-align:center;
-  max-width:950px;
-  margin:auto;
-}
+h2{font-size:42px;margin-bottom:20px;}
+p{color:#ccc;line-height:1.8;font-size:18px;}
 
-h2{
-  font-size:42px;
-  margin-bottom:20px;
-}
-
-p{
-  color:#ccc;
-  line-height:1.8;
-  font-size:18px;
-}
-
-/* TOPICS */
 .topics{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -174,10 +164,8 @@ p{
   border:1px solid #222;
   border-radius:12px;
   background:#0a0a0a;
-  font-weight:500;
 }
 
-/* FOOTER */
 footer{
   text-align:center;
   padding:40px;
@@ -185,18 +173,17 @@ footer{
   color:#777;
 }
 
-/* RESPONSIVE */
 @media(max-width:900px){
 .hero h1{font-size:40px;}
 .hero h2{font-size:20px;}
 .hero h3{font-size:16px;}
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="logo-text gradient">NomadLifeXP</div>
 
@@ -209,56 +196,35 @@ footer{
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
 
   <img src="logo.png" class="logo" alt="NomadLifeXP logo">
 
-  <!-- SEO PRIMARY SIGNAL -->
   <h1 class="gradient">NomadLifeXP — Self Growth System for Discipline, Fitness & Mindful Living</h1>
 
-  <!-- BRAND IDENTITY -->
   <h2>Evolve in Motion</h2>
 
-  <!-- KEYWORD CLUSTER SIGNAL -->
   <h3>Discipline • Fitness • Yoga • Mindful Movement • Self Growth</h3>
 
   <p>
-    A structured self-growth journey designed to help you build discipline, fitness consistency, and mental strength through daily habits and systems that actually work in real life.
+    A structured self-growth system designed to build discipline, fitness consistency, and mental strength through daily habits.
   </p>
 
-  <p>
-    Transform your body and mind through mindful movement, yoga practice, and awareness-based training that builds strength, flexibility, and inner calm.
-  </p>
-
-  <a class="btn" href="https://www.youtube.com/@nomadlifexp" target="_blank">Watch Journey</a>
-  <a class="btn" href="https://www.instagram.com/nomadlifexp/" target="_blank">Join Instagram</a>
+  <a class="btn" href="https://www.youtube.com/@nomadlifexp">Watch Journey</a>
+  <a class="btn" href="https://www.instagram.com/nomadlifexp/">Join Instagram</a>
 
 </section>
 
-<!-- ABOUT -->
 <section class="section center">
 
   <h2 class="gradient">What is NomadLifeXP?</h2>
 
   <p>
-    NomadLifeXP is a self-growth and personal transformation platform focused on building
-    <strong>discipline, fitness consistency, yoga practice, mindful movement, and mental strength</strong>.
-    It helps you move beyond motivation and build systems that create lasting change.
-  </p>
-
-  <p>
-    This journey is built around structured habits, mindset shifts, and awareness-based living.
-    You learn how to train your body, strengthen your mind, and develop emotional control through consistent daily practice.
-  </p>
-
-  <p>
-    Through fitness discipline, yoga, and mindful movement, you develop strength, flexibility, and inner calm while improving focus, identity, and long-term growth.
+    A self-growth platform focused on discipline, fitness consistency, yoga practice, mindful movement, and mental strength.
   </p>
 
 </section>
 
-<!-- TOPICAL AUTHORITY -->
 <section class="section center">
 
   <h2 class="gradient">Core Transformation Areas</h2>
@@ -267,39 +233,13 @@ footer{
     <div class="topic-box">Discipline Systems</div>
     <div class="topic-box">Fitness Consistency</div>
     <div class="topic-box">Yoga & Mindful Movement</div>
-    <div class="topic-box">Mental Strength Training</div>
-    <div class="topic-box">Habit Formation</div>
-    <div class="topic-box">Self Growth Journey</div>
+    <div class="topic-box">Mental Strength</div>
   </div>
 
 </section>
 
-<!-- INTERNAL LINK CLUSTERS -->
-<section class="section center">
-
-  <h2 class="gradient">Start Your Self Growth Journey</h2>
-
-  <p>
-    Explore structured systems designed to build discipline, improve fitness consistency, and develop long-term mental strength.
-  </p>
-
-  <!-- DISCIPLINE CLUSTER -->
-  <a class="btn" href="discipline-blog.html">Build Discipline System</a>
-  <a class="btn" href="discipline-creates-freedom.html">Discipline Creates Freedom</a>
-
-  <!-- FITNESS CLUSTER -->
-  <a class="btn" href="fitness-consistency.html">Fitness Consistency Guide</a>
-
-  <!-- YOGA CLUSTER -->
-  <a class="btn" href="headstand.html">Yoga Headstand Guide</a>
-
-  <!-- BLOG HUB -->
-  <a class="btn" href="blog.html">Explore All Guides</a>
-
-</section>
-
 <footer>
-  <p>NomadLifeXP — Self Growth • Discipline • Fitness • Yoga • Mindful Movement</p>
+  <p>NomadLifeXP — Discipline • Fitness • Yoga • Mindful Movement</p>
 </footer>
 
 </body>
