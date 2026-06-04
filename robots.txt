@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nomadlifexp.com/sitemap.xml
+
+# Block unnecessary areas (optional safety)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
