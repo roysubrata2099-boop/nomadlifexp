@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -17,11 +18,15 @@
 <meta property="og:description" content="Discipline, fitness, yoga, and mindset systems for self-growth.">
 <meta property="og:image" content="https://nomadlifexp.com/images/yogapose1.jpg">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
 body{
   font-family:'Poppins',sans-serif;
@@ -29,7 +34,6 @@ body{
   color:#fff;
 }
 
-/* NAV */
 nav{
   display:flex;
   justify-content:space-between;
@@ -50,18 +54,35 @@ nav a{
   -webkit-text-fill-color:transparent;
 }
 
-/* LAYOUT */
-.section{padding:60px 8%;}
+.section{
+  padding:60px 8%;
+}
 
-h1{font-size:42px;line-height:1.3;}
-h2{font-size:30px;margin:40px 0 20px;}
-p{color:#ccc;line-height:1.8;}
+h1{
+  font-size:42px;
+  line-height:1.3;
+}
 
-/* POST CARD */
+h2{
+  font-size:30px;
+  margin-bottom:20px;
+}
+
+p{
+  color:#ccc;
+  line-height:1.8;
+}
+
+.quick-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
 .post{
   display:flex;
   gap:25px;
-  margin-bottom:40px;
+  margin-bottom:35px;
   background:#0a0a0a;
   padding:20px;
   border-radius:18px;
@@ -69,24 +90,25 @@ p{color:#ccc;line-height:1.8;}
   align-items:center;
 }
 
-/* IMAGE FIX */
 .post img{
   width:40%;
   height:auto;
-  object-fit:contain;
+  object-fit:cover;
   border-radius:12px;
-  background:#111;
-  padding:10px;
 }
 
 .post-content{
   width:60%;
 }
 
-/* BUTTON */
+.post-content h3{
+  font-size:24px;
+  margin-bottom:10px;
+}
+
 .btn{
   display:inline-block;
-  margin-top:12px;
+  margin-top:15px;
   padding:10px 18px;
   border-radius:30px;
   background:linear-gradient(90deg,#a855f7,#f97316);
@@ -95,8 +117,12 @@ p{color:#ccc;line-height:1.8;}
   font-weight:600;
 }
 
-/* RESPONSIVE */
+footer{
+  border-top:1px solid #111;
+}
+
 @media(max-width:900px){
+
   .post{
     flex-direction:column;
     text-align:center;
@@ -105,6 +131,10 @@ p{color:#ccc;line-height:1.8;}
   .post img,
   .post-content{
     width:100%;
+  }
+
+  h1{
+    font-size:32px;
   }
 }
 
@@ -121,113 +151,179 @@ p{color:#ccc;line-height:1.8;}
 
 <div class="section">
 
-<h1 class="gradient">Structured Self-Growth Blog System</h1>
+  <h1 class="gradient">Structured Self-Growth Blog System</h1>
 
-<p>Discipline, fitness, yoga, and mindset systems for long-term transformation.</p>
+  <p>
+    Discipline, fitness, yoga, and mindset systems for long-term transformation.
+  </p>
 
 </div>
 
-<!-- LINKS -->
+<!-- QUICK LINKS -->
+
 <div class="section">
+
+  <div class="quick-links">
+
+```
 <a class="btn" href="/discipline-blog.html">Discipline</a>
 <a class="btn" href="/discipline-creates-freedom.html">Freedom</a>
 <a class="btn" href="/fitness-consistency.html">Fitness</a>
+<a class="btn" href="/fitness-is-not-about-time.html">Fitness Mindset</a>
 <a class="btn" href="/forward-bending.html">Yoga</a>
 <a class="btn" href="/headstand.html">Headstand</a>
-<a class="btn" href="/forearm-stand.html">Forearm</a>
+<a class="btn" href="/forearm-stand.html">Forearm Stand</a>
 <a class="btn" href="/stuck-in-life.html">Mindset</a>
+```
+
+  </div>
+
 </div>
 
 <!-- DISCIPLINE -->
+
 <div class="section">
-<h2 class="gradient">Discipline</h2>
 
-<div class="post">
-<img src="images/yoga2.jpg" alt="Discipline system">
-<div class="post-content">
-<h2>Discipline System</h2>
-<p>Build structure and mental control.</p>
-<a class="btn" href="discipline-blog.html">Read</a>
-</div>
-</div>
+  <h2 class="gradient">Discipline</h2>
 
-<!-- ✅ ADDED BLOG -->
-<div class="post">
-<img src="images/yoga-new.jpg" alt="Discipline creates freedom">
+  <div class="post">
+    <img src="images/yoga2.jpg" alt="Discipline system">
+
+```
 <div class="post-content">
-<h2>Discipline Creates Freedom</h2>
-<p>Why discipline is the real path to clarity and control.</p>
-<a class="btn" href="discipline-creates-freedom.html">Read</a>
+  <h3>Discipline System</h3>
+  <p>Build structure, consistency, and mental control.</p>
+  <a class="btn" href="discipline-blog.html">Read</a>
 </div>
+```
+
+  </div>
+
+  <div class="post">
+    <img src="images/yoga-new.jpg" alt="Discipline creates freedom">
+
+```
+<div class="post-content">
+  <h3>Discipline Creates Freedom</h3>
+  <p>Why discipline is the real path to clarity, freedom, and control.</p>
+  <a class="btn" href="discipline-creates-freedom.html">Read</a>
 </div>
+```
+
+  </div>
 
 </div>
 
 <!-- FITNESS -->
-<div class="section">
-<h2 class="gradient">Fitness</h2>
 
-<div class="post">
-<img src="images/fitness.jpg" alt="Fitness consistency">
+<div class="section">
+
+  <h2 class="gradient">Fitness</h2>
+
+  <div class="post">
+    <img src="images/fitness.jpg" alt="Fitness consistency">
+
+```
 <div class="post-content">
-<h2>Consistency Guide</h2>
-<p>Consistency beats motivation.</p>
-<a class="btn" href="fitness-consistency.html">Read</a>
+  <h3>Consistency Guide</h3>
+  <p>Consistency beats motivation when building lasting fitness habits.</p>
+  <a class="btn" href="fitness-consistency.html">Read</a>
 </div>
+```
+
+  </div>
+
+  <div class="post">
+    <img src="images/fitness1.jpg" alt="Fitness is not about time">
+
+```
+<div class="post-content">
+  <h3>Fitness Is Not About Time</h3>
+  <p>
+    Why priorities, mindset, and consistency matter more than motivation.
+  </p>
+  <a class="btn" href="fitness-is-not-about-time.html">Read</a>
 </div>
+```
+
+  </div>
+
 </div>
 
 <!-- YOGA -->
+
 <div class="section">
-<h2 class="gradient">Yoga</h2>
 
-<div class="post">
-<img src="images/forward-bend.jpg" alt="Forward bending yoga">
-<div class="post-content">
-<h2>Forward Bending</h2>
-<p>Calm mind and release stress.</p>
-<a class="btn" href="forward-bending.html">Read</a>
-</div>
-</div>
+  <h2 class="gradient">Yoga</h2>
 
-<div class="post">
-<img src="images/headstand.jpg" alt="Headstand yoga">
-<div class="post-content">
-<h2>Headstand</h2>
-<p>Focus and strength.</p>
-<a class="btn" href="headstand.html">Read</a>
-</div>
-</div>
+  <div class="post">
+    <img src="images/forward-bend.jpg" alt="Forward bending yoga">
 
-<div class="post">
-<img src="images/forearm-stand.jpg" alt="Forearm stand yoga">
+```
 <div class="post-content">
-<h2>Forearm Stand</h2>
-<p>Balance and confidence training.</p>
-<a class="btn" href="forearm-stand.html">Read</a>
+  <h3>Forward Bending</h3>
+  <p>Calm the mind, release tension, and improve flexibility.</p>
+  <a class="btn" href="forward-bending.html">Read</a>
 </div>
+```
+
+  </div>
+
+  <div class="post">
+    <img src="images/headstand.jpg" alt="Headstand yoga">
+
+```
+<div class="post-content">
+  <h3>Headstand</h3>
+  <p>Build strength, balance, concentration, and confidence.</p>
+  <a class="btn" href="headstand.html">Read</a>
 </div>
+```
+
+  </div>
+
+  <div class="post">
+    <img src="images/forearm-stand.jpg" alt="Forearm stand yoga">
+
+```
+<div class="post-content">
+  <h3>Forearm Stand</h3>
+  <p>Develop shoulder stability, body awareness, and focus.</p>
+  <a class="btn" href="forearm-stand.html">Read</a>
+</div>
+```
+
+  </div>
 
 </div>
 
 <!-- MINDSET -->
-<div class="section">
-<h2 class="gradient">Mindset</h2>
 
-<div class="post">
-<img src="images/yogapose1.jpg" alt="Mindset awareness">
+<div class="section">
+
+  <h2 class="gradient">Mindset</h2>
+
+  <div class="post">
+    <img src="images/yogapose1.jpg" alt="Mindset awareness">
+
+```
 <div class="post-content">
-<h2>You Are Not Stuck</h2>
-<p>Mental patterns shape reality.</p>
-<a class="btn" href="stuck-in-life.html">Read</a>
+  <h3>You Are Not Stuck</h3>
+  <p>Understand how thoughts, habits, and beliefs shape your reality.</p>
+  <a class="btn" href="stuck-in-life.html">Read</a>
 </div>
-</div>
+```
+
+  </div>
+
 </div>
 
 <footer class="section">
-<p style="text-align:center;color:#777;">
-© 2026 NomadLifeXP
-</p>
+
+  <p style="text-align:center;color:#777;">
+    © 2026 NomadLifeXP. All Rights Reserved.
+  </p>
+
 </footer>
 
 </body>
