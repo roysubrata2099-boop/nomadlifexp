@@ -1,46 +1,55 @@
 [
   {
-    "loc": "/",
+    "title": "Home",
+    "loc": "https://nomadlifexp.com/",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "1.00"
   },
   {
-    "loc": "/blog.html",
+    "title": "Blog Hub",
+    "loc": "https://nomadlifexp.com/blog.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.95"
   },
   {
-    "loc": "/discipline-blog.html",
+    "title": "Discipline Blog",
+    "loc": "https://nomadlifexp.com/discipline-blog.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.90"
   },
   {
-    "loc": "/discipline-creates-freedom.html",
+    "title": "Discipline Creates Freedom",
+    "loc": "https://nomadlifexp.com/discipline-creates-freedom.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.90"
   },
   {
-    "loc": "/fitness-consistency.html",
+    "title": "Fitness Consistency",
+    "loc": "https://nomadlifexp.com/fitness-consistency.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.88"
   },
   {
-    "loc": "/forward-bending.html",
+    "title": "Forward Bending",
+    "loc": "https://nomadlifexp.com/forward-bending.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.85"
   },
   {
-    "loc": "/headstand.html",
+    "title": "Headstand",
+    "loc": "https://nomadlifexp.com/headstand.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.85"
   },
   {
-    "loc": "/forearm-stand.html",
+    "title": "Forearm Stand",
+    "loc": "https://nomadlifexp.com/forearm-stand.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.85"
   },
   {
-    "loc": "/stuck-in-life.html",
+    "title": "Stuck In Life",
+    "loc": "https://nomadlifexp.com/stuck-in-life.html",
     "lastmod": "2026-06-04T00:00:00+00:00",
     "priority": "0.83"
   }
