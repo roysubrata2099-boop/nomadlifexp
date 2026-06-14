@@ -6,17 +6,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NomadLifeXP Blog | Discipline, Fitness, Yoga & Mindset Growth</title>
+<title>Fitness, Yoga, Discipline & Mindset Blog | NomadLifeXP Self Growth Guides</title>
 
-<meta name="description" content="Explore discipline, fitness, yoga, and mindset guides to build consistency, clarity, and self-growth. NomadLifeXP helps you evolve through structured daily systems.">
+<meta name="description" content="Explore fitness consistency, yoga for beginners, discipline building, and mindset transformation. Practical self-improvement guides to help you build better habits and change your life.">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://nomadlifexp.com/blog.html">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="NomadLifeXP Blog">
-<meta property="og:description" content="Discipline, fitness, yoga, and mindset growth content.">
+<meta property="og:title" content="NomadLifeXP Self Growth Blog">
+<meta property="og:description" content="Fitness, yoga, discipline, and mindset guides for real-life transformation.">
 <meta property="og:image" content="https://nomadlifexp.com/images/yogapose1.jpg">
 <meta property="og:url" content="https://nomadlifexp.com/blog.html">
 
@@ -24,6 +24,7 @@
 
 <style>
 
+/* GLOBAL */
 *{
   margin:0;
   padding:0;
@@ -36,6 +37,7 @@ body{
   color:#fff;
 }
 
+/* NAV */
 nav{
   display:flex;
   justify-content:space-between;
@@ -50,94 +52,83 @@ nav a{
   font-weight:600;
 }
 
+/* GRADIENT */
 .gradient{
   background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
+/* SECTIONS */
 .section{
   padding:60px 8%;
 }
 
 h1{
-  font-size:42px;
-  line-height:1.3;
+  font-size:44px;
+  line-height:1.2;
 }
 
 h2{
-  font-size:30px;
-  margin-bottom:20px;
-}
-
-h3{
-  font-size:22px;
+  font-size:28px;
+  margin-bottom:15px;
 }
 
 p{
   color:#ccc;
-  line-height:1.8;
+  line-height:1.7;
 }
 
-.quick-links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:20px;
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+  margin-top:25px;
+}
+
+.card{
+  background:#0a0a0a;
+  border:1px solid #1a1a1a;
+  border-radius:16px;
+  padding:20px;
+  transition:0.2s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  border-color:#f97316;
+}
+
+.card h3{
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+.card p{
+  color:#aaa;
+  font-size:14px;
 }
 
 .btn{
   display:inline-block;
-  margin-top:15px;
-  padding:10px 18px;
-  border-radius:30px;
+  margin-top:12px;
+  padding:8px 16px;
+  border-radius:25px;
   background:linear-gradient(90deg,#a855f7,#f97316);
-  color:white;
-  text-decoration:none;
+  color:#fff;
   font-weight:600;
+  text-decoration:none;
+  font-size:13px;
 }
 
-.post{
-  display:flex;
-  gap:25px;
-  margin-bottom:35px;
-  background:#0a0a0a;
-  padding:20px;
-  border-radius:18px;
-  border:1px solid #1a1a1a;
-  align-items:center;
-}
-
-.post img{
-  width:40%;
-  height:auto;
-  object-fit:cover;
-  border-radius:12px;
-}
-
-.post-content{
-  width:60%;
-}
-
+/* FOOTER */
 footer{
-  border-top:1px solid #111;
-  padding:30px;
   text-align:center;
-  color:#777;
-}
-
-@media(max-width:900px){
-  .post{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .post img,
-  .post-content{
-    width:100%;
-  }
-
-  h1{font-size:32px;}
+  padding:40px;
+  color:#666;
+  border-top:1px solid #111;
+  margin-top:60px;
 }
 
 </style>
@@ -155,71 +146,40 @@ footer{
 <!-- HERO -->
 <div class="section">
 
-  <h1 class="gradient">Discipline, Fitness, Yoga & Mindset Growth</h1>
+  <h1 class="gradient">Fitness, Yoga, Discipline & Mindset Growth Blog</h1>
 
-  <p style="margin-top:15px;color:#aaa;font-size:1.1rem;">
-    Evolve in Motion
+  <p style="margin-top:15px;color:#aaa;font-size:16px;">
+    Practical self-improvement guides for building discipline, improving fitness consistency, and developing mental clarity.
   </p>
 
-  <p style="margin-top:20px;">
-    Explore practical systems for discipline, fitness, yoga, and mindset growth.
-    Build consistency, clarity, and long-term transformation through daily action.
+  <p style="margin-top:15px;">
+    NomadLifeXP is a structured self-growth system focused on real transformation through daily habits,
+    not motivation. Learn fitness, yoga, discipline, and mindset systems that actually work.
   </p>
-
-  <!-- QUICK LINKS -->
-  <div class="quick-links">
-
-    <a class="btn" href="/discipline-blog.html">Discipline</a>
-    <a class="btn" href="/fitness-consistency.html">Fitness</a>
-    <a class="btn" href="/forward-bending.html">Yoga</a>
-    <a class="btn" href="/headstand.html">Headstand</a>
-    <a class="btn" href="/forearm-stand.html">Forearm Stand</a>
-    <a class="btn" href="/stuck-in-life.html">Mindset</a>
-
-  </div>
 
 </div>
 
-<!-- DISCIPLINE (FIRST = HIGHEST VALUE NICHE) -->
+<!-- DISCIPLINE -->
 <div class="section">
 
-  <h2 class="gradient">Discipline</h2>
+  <h2 class="gradient">Discipline & Habit Building</h2>
 
-  <div class="post">
-    <img src="images/yoga2.jpg" alt="Discipline system">
+  <p>Build structure, consistency, and self-control to improve every area of your life.</p>
 
-    <div class="post-content">
-      <h3>Discipline System</h3>
-      <p>Build structure, consistency, and mental control.</p>
-      <a class="btn" href="discipline-blog.html">Read</a>
+  <div class="grid">
+
+    <div class="card">
+      <h3>How to Build Discipline in Life</h3>
+      <p>Learn practical systems to build discipline and consistency.</p>
+      <a class="btn" href="/discipline-blog.html">Read</a>
     </div>
-  </div>
 
-  <div class="post">
-    <img src="images/yoga-new.jpg" alt="Discipline creates freedom">
-
-    <div class="post-content">
-      <h3>Discipline Creates Freedom</h3>
-      <p>Why discipline is the real path to clarity, freedom, and control.</p>
-      <a class="btn" href="discipline-creates-freedom.html">Read</a>
+    <div class="card">
+      <h3>Why Discipline Creates Freedom</h3>
+      <p>Understand how discipline leads to clarity and long-term freedom.</p>
+      <a class="btn" href="/discipline-creates-freedom.html">Read</a>
     </div>
-  </div>
 
-</div>
-
-<!-- MINDSET (SECOND = EMOTIONAL HOOK) -->
-<div class="section">
-
-  <h2 class="gradient">Mindset</h2>
-
-  <div class="post">
-    <img src="images/yogapose1.jpg" alt="Mindset awareness">
-
-    <div class="post-content">
-      <h3>You Are Not Stuck</h3>
-      <p>Understand how thoughts, habits, and beliefs shape your reality.</p>
-      <a class="btn" href="stuck-in-life.html">Read</a>
-    </div>
   </div>
 
 </div>
@@ -227,26 +187,24 @@ footer{
 <!-- FITNESS -->
 <div class="section">
 
-  <h2 class="gradient">Fitness</h2>
+  <h2 class="gradient">Fitness & Consistency</h2>
 
-  <div class="post">
-    <img src="images/fitness.jpg" alt="Fitness consistency">
+  <p>Build strong fitness habits and stay consistent without relying on motivation.</p>
 
-    <div class="post-content">
-      <h3>Consistency Guide</h3>
-      <p>Consistency beats motivation when building lasting habits.</p>
-      <a class="btn" href="fitness-consistency.html">Read</a>
+  <div class="grid">
+
+    <div class="card">
+      <h3>How to Stay Consistent With Fitness</h3>
+      <p>Simple strategies for long-term fitness habits.</p>
+      <a class="btn" href="/fitness-consistency.html">Read</a>
     </div>
-  </div>
 
-  <div class="post">
-    <img src="images/fitness1.jpg" alt="Fitness mindset">
-
-    <div class="post-content">
-      <h3>Fitness Is Not About Time</h3>
-      <p>Mindset matters more than time or motivation.</p>
-      <a class="btn" href="fitness-is-not-about-time.html">Read</a>
+    <div class="card">
+      <h3>Fitness Is About Discipline, Not Time</h3>
+      <p>Why mindset matters more than time or motivation.</p>
+      <a class="btn" href="/fitness-is-not-about-time.html">Read</a>
     </div>
+
   </div>
 
 </div>
@@ -254,53 +212,56 @@ footer{
 <!-- YOGA -->
 <div class="section">
 
-  <h2 class="gradient">Yoga</h2>
+  <h2 class="gradient">Yoga & Flexibility</h2>
 
-  <div class="post">
-    <img src="images/forward-bend.jpg" alt="Forward bending yoga">
+  <p>Beginner-friendly yoga guides for strength, flexibility, and balance.</p>
 
-    <div class="post-content">
-      <h3>Forward Bending</h3>
-      <p>Release tension and calm the mind through movement.</p>
-      <a class="btn" href="forward-bending.html">Read</a>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Headstand for Beginners</h3>
+      <p>Step-by-step guide to safely learn headstand.</p>
+      <a class="btn" href="/headstand.html">Read</a>
     </div>
-  </div>
 
-  <div class="post">
-    <img src="images/headstand.jpg" alt="Headstand yoga">
-
-    <div class="post-content">
-      <h3>Headstand</h3>
-      <p>Build strength, balance, and mental focus.</p>
-      <a class="btn" href="headstand.html">Read</a>
+    <div class="card">
+      <h3>Forearm Stand Guide</h3>
+      <p>Build strength and control through inversion practice.</p>
+      <a class="btn" href="/forearm-stand.html">Read</a>
     </div>
-  </div>
 
-  <div class="post">
-    <img src="images/forearm-stand.jpg" alt="Forearm stand yoga">
-
-    <div class="post-content">
-      <h3>Forearm Stand</h3>
-      <p>Develop control, stability, and awareness.</p>
-      <a class="btn" href="forearm-stand.html">Read</a>
+    <div class="card">
+      <h3>Forward Bending Benefits</h3>
+      <p>Improve flexibility and reduce stress.</p>
+      <a class="btn" href="/forward-bending.html">Read</a>
     </div>
+
   </div>
 
 </div>
 
-<!-- FOOTER CTA (IMPORTANT ADDITION) -->
-<div class="section" style="text-align:center;">
+<!-- MINDSET -->
+<div class="section">
 
-  <h2 class="gradient">Join the Nomad Movement</h2>
-  <p>Get weekly insights on discipline, fitness, yoga, and self-growth.</p>
+  <h2 class="gradient">Mindset & Life Transformation</h2>
 
-  <a class="btn" href="/index.html#join">Join Now</a>
+  <p>Break mental blocks and gain clarity in life direction.</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>What to Do When You Feel Stuck in Life</h3>
+      <p>Learn how to reset your mindset and move forward.</p>
+      <a class="btn" href="/stuck-in-life.html">Read</a>
+    </div>
+
+  </div>
 
 </div>
 
 <!-- FOOTER -->
 <footer>
-  © 2026 NomadLifeXP — Evolve in Motion
+  © 2026 NomadLifeXP — Fitness • Yoga • Discipline • Mindset
 </footer>
 
 </body>
