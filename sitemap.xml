@@ -1,64 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- HOME -->
   <url>
     <loc>https://nomadlifexp.com/</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
-  <!-- BLOG HUB -->
   <url>
     <loc>https://nomadlifexp.com/blog.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.95</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
-  <!-- DISCIPLINE CLUSTER -->
   <url>
     <loc>https://nomadlifexp.com/discipline-blog.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
   <url>
     <loc>https://nomadlifexp.com/discipline-creates-freedom.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
-  <!-- FITNESS CLUSTER -->
   <url>
     <loc>https://nomadlifexp.com/fitness-consistency.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.88</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
-  <!-- YOGA CLUSTER -->
   <url>
     <loc>https://nomadlifexp.com/forward-bending.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.85</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
   <url>
     <loc>https://nomadlifexp.com/headstand.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.85</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
   <url>
     <loc>https://nomadlifexp.com/forearm-stand.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.85</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
-  <!-- MINDSET CLUSTER -->
   <url>
     <loc>https://nomadlifexp.com/stuck-in-life.html</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <priority>0.83</priority>
+    <lastmod>2026-06-04</lastmod>
   </url>
 
 </urlset>
