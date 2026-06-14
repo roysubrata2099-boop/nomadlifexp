@@ -1,0 +1,23 @@
+name: IndexNow Submission
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Submit URLs to IndexNow
+        run: |
+          curl -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "host": "nomadlifexp.com",
+            "key": "5738d20b20ad43c5819a0f6930282857",
+            "urlList": [
+              "https://nomadlifexp.com/"
+            ]
+          }'
