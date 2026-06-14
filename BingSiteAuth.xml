@@ -2,19 +2,16 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Homepage -->
     <url>
         <loc>https://nomadlifexp.com/</loc>
         <lastmod>2026-06-14</lastmod>
     </url>
 
-    <!-- Blog Hub -->
     <url>
         <loc>https://nomadlifexp.com/blog.html</loc>
         <lastmod>2026-06-14</lastmod>
     </url>
 
-    <!-- Blog Posts -->
     <url>
         <loc>https://nomadlifexp.com/thailand-digital-nomad-guide.html</loc>
         <lastmod>2026-06-14</lastmod>
