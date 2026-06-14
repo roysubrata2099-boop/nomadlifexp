@@ -2,20 +2,27 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- HOME -->
-  <url>
-    <loc>https://nomadlifexp.com/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+    <!-- Homepage -->
+    <url>
+        <loc>https://nomadlifexp.com/</loc>
+        <lastmod>2026-06-14</lastmod>
+    </url>
 
-  <!-- BLOG HUB -->
-  <url>
-    <loc>https://nomadlifexp.com/blog.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <!-- Blog Hub -->
+    <url>
+        <loc>https://nomadlifexp.com/blog.html</loc>
+        <lastmod>2026-06-14</lastmod>
+    </url>
+
+    <!-- Blog Posts -->
+    <url>
+        <loc>https://nomadlifexp.com/thailand-digital-nomad-guide.html</loc>
+        <lastmod>2026-06-14</lastmod>
+    </url>
+
+    <url>
+        <loc>https://nomadlifexp.com/bali-budget-guide.html</loc>
+        <lastmod>2026-06-13</lastmod>
+    </url>
 
 </urlset>
