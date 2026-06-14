@@ -1,4 +1,4 @@
-name: IndexNow Auto Submit from posts.json
+name: Smart SEO Automation (IndexNow + Sitemap)
 
 on:
   push:
@@ -6,27 +6,44 @@ on:
       - main
 
 jobs:
-  indexnow:
+  seo:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install jq
+      - name: Install tools
         run: sudo apt-get install jq -y
 
-      - name: Fetch posts.json and extract URLs
+      - name: Fetch posts.json
+        run: curl -s https://nomadlifexp.com/data/posts.json > posts.json
+
+      - name: Extract URLs
+        id: urls
         run: |
-          curl -s https://nomadlifexp.com/data/posts.json > posts.json
+          jq -r '.[].loc' posts.json > all_urls.txt
+          echo "ALL_URLS=$(cat all_urls.txt | tr '\n' ' ')" >> $GITHUB_OUTPUT
 
-          URLS=$(jq -r '.[].loc' posts.json)
+      - name: Generate sitemap.xml
+        run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
 
-          JSON=$(echo "$URLS" | jq -R -s -c 'split("\n")[:-1]')
+          jq -c '.[]' posts.json | while read item; do
+            loc=$(echo $item | jq -r '.loc')
+            lastmod=$(echo $item | jq -r '.lastmod')
 
-          echo "$JSON"
+            echo "<url><loc>$loc</loc><lastmod>$lastmod</lastmod></url>" >> sitemap.xml
+          done
+
+          echo '</urlset>' >> sitemap.xml
+
+      - name: Submit to IndexNow (smart batch)
+        run: |
+          URLS=$(jq -r '.[].loc' posts.json | jq -R -s -c 'split("\n")[:-1]')
 
           curl -X POST "https://api.indexnow.org/indexnow" \
           -H "Content-Type: application/json" \
           -d "{
             \"host\": \"nomadlifexp.com\",
             \"key\": \"5738d20b20ad43c5819a0f6930282857\",
-            \"urlList\": $JSON
+            \"urlList\": $URLS
           }"
