@@ -1,11 +1,33 @@
-title: "NomadLifeXP Blog"
-description: "Transform your life with expert fitness tips, yoga practices, mindfulness techniques, healthy lifestyle advice, and personal growth strategies from NomadLifeXP."
+name: IndexNow Auto Submit from posts.json
 
-url: "https://nomadlifexp.com"
+on:
+  push:
+    branches:
+      - main
 
-lang: en
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
 
-theme: minima
+    steps:
+      - name: Install jq
+        run: sudo apt-get install jq -y
 
-plugins:
-  - jekyll-feed
+      - name: Fetch posts.json and extract URLs
+        run: |
+          curl -s https://nomadlifexp.com/data/posts.json > posts.json
+
+          URLS=$(jq -r '.[].loc' posts.json)
+
+          # Convert to JSON array
+          JSON=$(echo "$URLS" | jq -R -s -c 'split("\n")[:-1]')
+
+          echo "$JSON"
+
+          curl -X POST "https://api.indexnow.org/indexnow" \
+          -H "Content-Type: application/json" \
+          -d "{
+            \"host\": \"nomadlifexp.com\",
+            \"key\": \"5738d20b20ad43c5819a0f6930282857\",
+            \"urlList\": $JSON
+          }"
