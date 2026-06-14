@@ -1,33 +1,6 @@
-name: IndexNow Auto Submit from posts.json
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  indexnow:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Install jq
-        run: sudo apt-get install jq -y
-
-      - name: Fetch posts.json and extract URLs
-        run: |
-          curl -s https://nomadlifexp.com/data/posts.json > posts.json
-
-          URLS=$(jq -r '.[].loc' posts.json)
-
-          # Convert to JSON array
-          JSON=$(echo "$URLS" | jq -R -s -c 'split("\n")[:-1]')
-
-          echo "$JSON"
-
-          curl -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json" \
-          -d "{
-            \"host\": \"nomadlifexp.com\",
-            \"key\": \"5738d20b20ad43c5819a0f6930282857\",
-            \"urlList\": $JSON
-          }"
+title: NomadLifeXP Blog
+description: ...
+url: https://nomadlifexp.com
+theme: minima
+plugins:
+  - jekyll-feed
