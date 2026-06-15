@@ -43,18 +43,31 @@ nav a:hover{
   color:#f97316;
 }
 
+/* LOGO FIX */
 .logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
   font-weight:800;
 }
 
-/* HERO */
+.logo img{
+  height:28px;
+  width:auto;
+}
+
+/* HERO FIX */
 .hero{
   padding:140px 8% 80px;
   text-align:center;
+
+  /* IMPORTANT FIX: correct path */
+  background:url("./hero.jpg") center/cover no-repeat;
 }
 
 .hero h1{
   font-size:52px;
+  text-shadow:0 4px 20px rgba(0,0,0,0.6);
 }
 
 .gradient{
@@ -115,7 +128,12 @@ footer{
 
 <!-- NAV -->
 <nav>
-<div class="logo gradient">NomadLifeXP</div>
+
+<div class="logo">
+  <!-- FIX: correct path -->
+  <img src="./logo.png" alt="NomadLifeXP Logo">
+  <span class="gradient">NomadLifeXP</span>
+</div>
 
 <div>
 <a href="index.html">Home</a>
@@ -125,6 +143,7 @@ footer{
 <a href="/forearm-stand.html">Yoga</a>
 <a href="/mental-clarity.html">Mindset</a>
 </div>
+
 </nav>
 
 <!-- HERO -->
@@ -141,52 +160,33 @@ footer{
 
 <div class="grid">
 
-<!-- DISCIPLINE -->
 <div class="card">
 <h3>Discipline System</h3>
 <p>Identity-based habits & consistency building.</p>
-<a href="/discipline-blog.html">Build Discipline →</a><br>
-<a href="/discipline-creates-freedom.html">Discipline Creates Freedom →</a>
+<a href="/discipline-blog.html">Build Discipline →</a>
 </div>
 
-<!-- FITNESS -->
 <div class="card">
 <h3>Fitness System</h3>
 <p>Long-term consistency without motivation.</p>
-<a href="/fitness-consistency.html">Fitness System →</a><br>
-<a href="/fitness-is-not-about-time.html">Fitness Truth →</a>
+<a href="/fitness-consistency.html">Fitness System →</a>
 </div>
 
-<!-- YOGA (FIXED + HEADSTAND ADDED) -->
 <div class="card">
 <h3>Yoga System</h3>
 <p>Strength, balance & body control.</p>
-
 <a href="/headstand.html">Headstand →</a><br>
 <a href="/forearm-stand.html">Forearm Stand →</a><br>
 <a href="/forward-bending.html">Forward Bend →</a>
 </div>
 
-<!-- MINDSET -->
 <div class="card">
 <h3>Mental Clarity System</h3>
 <p>Focus, clarity & cognitive control.</p>
-
-<a href="/mental-clarity.html">Mental Clarity →</a><br>
-<a href="/attention-span.html">Attention Span →</a><br>
-<a href="/stop-procrastination.html">Stop Procrastination →</a><br>
-<a href="/stuck-in-life.html">Stuck in Life →</a>
+<a href="/mental-clarity.html">Mental Clarity →</a>
 </div>
 
 </div>
-</section>
-
-<!-- WHY SYSTEM WORKS -->
-<section class="section">
-<h2 class="gradient">Why NomadLifeXP Works</h2>
-<p>
-It replaces motivation with structured identity-based systems that build automatic discipline through repetition and behavior design.
-</p>
 </section>
 
 <!-- FOOTER -->
