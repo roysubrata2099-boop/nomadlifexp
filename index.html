@@ -5,15 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NomadLifeXP | Build Discipline. Transform Your Life.</title>
+<title>NomadLifeXP | Self Transformation System for Discipline, Fitness, Yoga & Mental Clarity</title>
 
-<meta name="description" content="NomadLifeXP helps you build discipline, fitness, yoga practice, and mental clarity through structured systems that turn chaos into clarity.">
+<meta name="description" content="NomadLifeXP - Evolve in Motion. Build discipline, fitness consistency, yoga strength, and mental clarity using structured self transformation systems, not motivation.">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://nomadlifexp.com/">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="icon" href="/favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7KY4PQ8WN"></script>
@@ -34,7 +35,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 </script>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -54,24 +54,27 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-padding:18px 8%;
+padding:14px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 background:rgba(0,0,0,0.85);
 backdrop-filter:blur(12px);
 z-index:1000;
+border-bottom:1px solid #111;
 }
 
 .logo{
+display:flex;
+align-items:center;
+gap:10px;
 font-weight:800;
-font-size:22px;
+font-size:20px;
 }
 
-.gradient{
-background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+.logo img{
+height:28px;
+width:28px;
 }
 
 nav a{
@@ -83,6 +86,12 @@ font-weight:500;
 }
 
 nav a:hover{opacity:1;}
+
+.gradient{
+background:linear-gradient(90deg,#a855f7,#f97316,#3b82f6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
 
 /* HERO */
 .hero{
@@ -170,16 +179,31 @@ background:#0b0b0b;
 padding:22px;
 border-radius:14px;
 border:1px solid #1f1f1f;
+transition:0.2s;
 }
 
-/* EMAIL */
-input{
-padding:14px;
-width:280px;
-border-radius:25px;
-border:none;
-outline:none;
-margin-top:10px;
+.card:hover{
+transform:translateY(-4px);
+border-color:#f97316;
+}
+
+/* FAQ */
+.faq{
+text-align:left;
+max-width:850px;
+margin:auto;
+margin-top:30px;
+}
+
+.faq h3{
+margin-top:18px;
+color:#fff;
+font-size:18px;
+}
+
+.faq p{
+color:#aaa;
+margin-top:6px;
 }
 
 /* FOOTER */
@@ -194,7 +218,6 @@ border-top:1px solid #111;
 .hero h1{font-size:34px;}
 .section h2{font-size:26px;}
 }
-
 </style>
 
 </head>
@@ -204,32 +227,43 @@ border-top:1px solid #111;
 <!-- NAV -->
 <nav>
 <div class="logo gradient">
-<a href="index.html" style="text-decoration:none;">NomadLifeXP</a>
+<img src="logo.png" alt="NomadLifeXP Logo">
+NomadLifeXP
 </div>
 
 <div>
 <a href="#about">About</a>
 <a href="blog.html">Blog</a>
+<a href="#faq">FAQ</a>
 <a href="#join">Join</a>
 <a href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
 <a href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
 </div>
 </nav>
 
-<!-- HERO (HIGH CONVERSION HOOK) -->
+<!-- HERO -->
 <section class="hero">
 
-<h1 class="gradient">
-You Don’t Lack Motivation. You Lack Discipline Systems.
-</h1>
+<h1 class="gradient">NomadLifeXP – Evolve in Motion</h1>
 
 <p>
-NomadLifeXP helps you turn chaos into structure using fitness, yoga, mindset training, and daily habits that actually stick.
+Build discipline, fitness consistency, yoga strength, and mental clarity using structured self transformation systems that replace motivation with identity based action.
 </p>
 
 <div class="cta">
-<a class="btn btn-primary" href="#join">Start Your Reset</a>
-<a class="btn btn-secondary" href="blog.html">Read Transformations</a>
+<a class="btn btn-primary" href="#join">Start Your Transformation</a>
+<a class="btn btn-secondary" href="blog.html">Explore Systems</a>
+</div>
+
+<!-- SOCIAL (HERO LOOP) -->
+<div class="cta" style="margin-top:15px;">
+<a class="btn btn-secondary" href="https://www.youtube.com/@nomadlifexp" target="_blank">
+YouTube Growth System
+</a>
+
+<a class="btn btn-secondary" href="https://www.instagram.com/nomadlifexp/" target="_blank">
+Instagram Daily Discipline
+</a>
 </div>
 
 </section>
@@ -238,8 +272,17 @@ NomadLifeXP helps you turn chaos into structure using fitness, yoga, mindset tra
 <section class="section" id="about">
 
 <h2 class="gradient">What is NomadLifeXP?</h2>
+
 <p>
-A structured self-growth system built around discipline, fitness, yoga, and mental clarity. Not motivation. Real systems that change identity.
+A self transformation system designed to help you build discipline, improve fitness consistency,
+master yoga control, and develop mental clarity through structured habits and identity change.
+</p>
+
+<p style="margin-top:12px;">
+Follow daily transformation content on 
+<a href="https://www.youtube.com/@nomadlifexp" target="_blank" style="color:#f97316;">YouTube</a>
+and 
+<a href="https://www.instagram.com/nomadlifexp/" target="_blank" style="color:#f97316;">Instagram</a>.
 </p>
 
 </section>
@@ -247,81 +290,114 @@ A structured self-growth system built around discipline, fitness, yoga, and ment
 <!-- VALUE -->
 <section class="section">
 
-<h2 class="gradient">What You Build Here</h2>
+<h2 class="gradient">Core Transformation Systems</h2>
 
 <div class="grid">
-<div class="card">Unbreakable Discipline</div>
-<div class="card">Consistent Fitness Identity</div>
-<div class="card">Mental Clarity & Focus</div>
-<div class="card">Calm, Controlled Mindset</div>
+
+<div class="card">
+<h3>Discipline System</h3>
+<p>Build consistency and self control through structured habits.</p>
+<a href="blog.html">Explore Discipline</a>
 </div>
 
-</section>
-
-<!-- BLOG CTA -->
-<section class="section">
-
-<h2 class="gradient">Deep Dive Articles</h2>
-<p>Learn how discipline, habits, and mindset actually work in real life.</p>
-
-<div class="cta">
-<a class="btn btn-secondary" href="blog.html">Go to Blog</a>
+<div class="card">
+<h3>Fitness System</h3>
+<p>Build long term fitness identity without motivation.</p>
+<a href="blog.html">Explore Fitness</a>
 </div>
 
-</section>
+<div class="card">
+<h3>Yoga System</h3>
+<p>Improve strength, flexibility, and body awareness.</p>
+<a href="blog.html">Explore Yoga</a>
+</div>
 
-<!-- PHILOSOPHY -->
-<section class="section">
+<div class="card">
+<h3>Mental Clarity System</h3>
+<p>Stop overthinking and improve focus and decision making.</p>
 
-<h2 class="gradient">Evolve in Motion</h2>
-<p>
-Transformation is not inspiration. It is repetition, identity change, and structured action over time.
-</p>
-
-</section>
-
-<!-- EMAIL LEAD MAGNET -->
-<section class="section" id="join">
-
-<h2 class="gradient">Get Your Free Discipline Reset</h2>
-
-<p>
-Join the Nomad Movement and receive weekly systems for discipline, fitness, and mental clarity.
-</p>
-
-<input type="email" placeholder="Enter your email">
-
+<a href="blog.html">Explore Mindset</a>
 <br><br>
 
-<button class="btn btn-primary">Get Free Access</button>
+<a href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
+<br>
+<a href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
+</div>
+
+</div>
 
 </section>
 
-<!-- SOCIAL -->
-<section class="section">
+<!-- FAQ -->
+<section class="section" id="faq">
 
-<h2 class="gradient">Follow the Journey</h2>
+<h2 class="gradient">Frequently Asked Questions</h2>
 
-<p>Daily content on discipline, fitness, yoga, and mindset.</p>
+<div class="faq">
+
+<h3>What is NomadLifeXP?</h3>
+<p>A structured self transformation system focused on discipline, fitness, yoga, and mental clarity.</p>
+
+<h3>How does this system work?</h3>
+<p>It replaces motivation with structured daily systems that change your identity over time.</p>
+
+<h3>Can I really build discipline with this?</h3>
+<p>Yes, discipline is built through repetition and systems, not motivation or emotion.</p>
+
+<h3>Is this beginner friendly?</h3>
+<p>Yes, all systems are designed for beginners and progress step by step.</p>
+
+</div>
+
+</section>
+
+<!-- JOIN -->
+<section class="section" id="join">
+
+<h2 class="gradient">Start Your Transformation</h2>
+
+<p>Join the system and start building discipline, fitness, and mental clarity today.</p>
 
 <div class="cta">
-
-<a class="btn btn-secondary" href="https://www.youtube.com/@nomadlifexp" target="_blank">
-YouTube Growth System
-</a>
-
-<a class="btn btn-secondary" href="https://www.instagram.com/nomadlifexp/" target="_blank">
-Instagram Daily Flow
-</a>
-
+<a class="btn btn-primary" href="blog.html">Enter System</a>
 </div>
 
 </section>
 
 <!-- FOOTER -->
 <footer>
-NomadLifeXP — Discipline • Fitness • Yoga • Mindset • Evolve in Motion
+NomadLifeXP – Evolve in Motion • Discipline • Fitness • Yoga • Mindset
+
+<br><br>
+
+<a href="https://www.youtube.com/@nomadlifexp" target="_blank" style="color:#f97316;text-decoration:none;">
+YouTube
+</a>
+&nbsp;|&nbsp;
+<a href="https://www.instagram.com/nomadlifexp/" target="_blank" style="color:#f97316;text-decoration:none;">
+Instagram
+</a>
 </footer>
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NomadLifeXP",
+  "url": "https://nomadlifexp.com/"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NomadLifeXP",
+  "url": "https://nomadlifexp.com/",
+  "logo": "https://nomadlifexp.com/logo.png"
+}
+</script>
 
 </body>
 </html>
