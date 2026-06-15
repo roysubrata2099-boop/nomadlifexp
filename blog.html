@@ -5,46 +5,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Self Transformation System Blog – Discipline, Fitness, Yoga & Mental Clarity | NomadLifeXP</title>
+<title>NomadLifeXP Blog System | Discipline, Fitness, Yoga, Mindset Hub</title>
 
-<meta name="description" content="NomadLifeXP Self Transformation Blog - Evolve in Motion. Build discipline, fitness consistency, yoga strength, and mental clarity using identity based systems instead of motivation.">
-
+<meta name="description" content="Explore NomadLifeXP self transformation system: discipline, fitness consistency, yoga strength including headstand, and mental clarity systems.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://nomadlifexp.com/blog.html">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
-
 body{
+  margin:0;
+  font-family:Poppins,sans-serif;
   background:#0b0f14;
   color:#e5e7eb;
-  line-height:1.7;
+  line-height:1.6;
 }
 
-.section{
-  padding:80px 8%;
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 8%;
+  border-bottom:1px solid #1f2937;
+  position:fixed;
+  width:100%;
+  top:0;
+  background:#0b0f14;
+  z-index:1000;
 }
 
-h1{
-  font-size:44px;
-  color:#fff;
+nav a{
+  color:#cbd5e1;
+  margin-left:14px;
+  text-decoration:none;
+  font-weight:500;
 }
 
-h2{
-  font-size:30px;
-  margin-bottom:14px;
-  color:#fff;
+nav a:hover{ color:#f97316; }
+
+.logo{
+  font-weight:800;
 }
 
-p{
-  color:#b6c2cf;
+/* HERO */
+.hero{
+  padding:140px 8% 60px;
+  text-align:center;
 }
 
 .gradient{
@@ -53,72 +61,128 @@ p{
   -webkit-text-fill-color:transparent;
 }
 
+/* SOCIAL */
+.social{
+  margin-top:15px;
+}
+
+.social a{
+  display:inline-block;
+  margin:0 10px;
+  padding:10px 14px;
+  border:1px solid #1f2937;
+  border-radius:8px;
+  text-decoration:none;
+  color:#cbd5e1;
+}
+
+.social a:hover{
+  border-color:#f97316;
+  color:#f97316;
+}
+
+/* SECTION */
+.section{
+  padding:70px 8%;
+  text-align:center;
+}
+
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
-  margin-top:20px;
+  gap:20px;
+  margin-top:25px;
 }
 
+/* CARD */
 .card{
-  background:#111827;
+  background:linear-gradient(145deg,#111827,#0b1220);
   border:1px solid #1f2937;
+  padding:20px;
   border-radius:14px;
-  padding:22px;
+  text-align:left;
   transition:0.2s;
 }
 
 .card:hover{
-  transform:translateY(-6px);
   border-color:#f97316;
+  transform:translateY(-5px);
 }
 
-a{
+.card a{
+  display:block;
+  margin-top:6px;
   color:#f97316;
   text-decoration:none;
   font-weight:600;
 }
+
+/* FOOTER */
+footer{
+  padding:40px;
+  text-align:center;
+  color:#94a3b8;
+  border-top:1px solid #1f2937;
+  margin-top:60px;
+}
 </style>
+
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="section">
+<!-- NAV -->
+<nav>
 
-<h1 class="gradient">Self Transformation Blog System</h1>
+<div class="logo gradient">NomadLifeXP Blog</div>
 
-<p>
-Discipline, Fitness, Yoga & Mental Clarity systems built on identity-based transformation.
-</p>
-
+<div>
+<a href="index.html">Home</a>
+<a href="blog.html">Blog</a>
+<a href="/discipline-blog.html">Discipline</a>
+<a href="/fitness-consistency.html">Fitness</a>
+<a href="/headstand.html">Yoga</a>
+<a href="/mental-clarity.html">Mindset</a>
 </div>
 
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<h1 class="gradient">Self Transformation Blog System</h1>
+<p>Discipline • Fitness • Yoga • Mental Clarity</p>
+
+<div class="social">
+  <a href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
+  <a href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
+</div>
+
+</section>
+
 <!-- DISCIPLINE -->
-<div class="section">
-<h2>Discipline System</h2>
+<section class="section">
+<h2 class="gradient">Discipline System</h2>
 
 <div class="grid">
-
 <div class="card">
 <h3>How to Build Discipline in Life</h3>
 <a href="/discipline-blog.html">Read →</a>
 </div>
 
 <div class="card">
-<h3>Why Discipline Creates Freedom</h3>
+<h3>Discipline Creates Freedom</h3>
 <a href="/discipline-creates-freedom.html">Read →</a>
 </div>
-
 </div>
-</div>
+</section>
 
 <!-- FITNESS -->
-<div class="section">
-<h2>Fitness System</h2>
+<section class="section">
+<h2 class="gradient">Fitness System</h2>
 
 <div class="grid">
-
 <div class="card">
 <h3>Fitness Consistency System</h3>
 <a href="/fitness-consistency.html">Read →</a>
@@ -128,16 +192,14 @@ Discipline, Fitness, Yoga & Mental Clarity systems built on identity-based trans
 <h3>Fitness Is Not About Time</h3>
 <a href="/fitness-is-not-about-time.html">Read →</a>
 </div>
-
 </div>
-</div>
+</section>
 
-<!-- YOGA (HEADSTAND FIXED HERE) -->
-<div class="section">
-<h2>Yoga System</h2>
+<!-- YOGA -->
+<section class="section">
+<h2 class="gradient">Yoga System</h2>
 
 <div class="grid">
-
 <div class="card">
 <h3>Headstand Guide</h3>
 <a href="/headstand.html">Read →</a>
@@ -152,23 +214,21 @@ Discipline, Fitness, Yoga & Mental Clarity systems built on identity-based trans
 <h3>Forward Bending</h3>
 <a href="/forward-bending.html">Read →</a>
 </div>
-
 </div>
-</div>
+</section>
 
 <!-- MINDSET -->
-<div class="section">
-<h2>Mental Clarity System</h2>
+<section class="section">
+<h2 class="gradient">Mental Clarity System</h2>
 
 <div class="grid">
-
 <div class="card">
-<h3>Stop Overthinking</h3>
+<h3>Mental Clarity</h3>
 <a href="/mental-clarity.html">Read →</a>
 </div>
 
 <div class="card">
-<h3>Attention Span Fix</h3>
+<h3>Attention Span</h3>
 <a href="/attention-span.html">Read →</a>
 </div>
 
@@ -181,14 +241,27 @@ Discipline, Fitness, Yoga & Mental Clarity systems built on identity-based trans
 <h3>Stuck in Life</h3>
 <a href="/stuck-in-life.html">Read →</a>
 </div>
+</div>
+</section>
 
-</div>
-</div>
+<!-- SEO HUB -->
+<section class="section">
+<h2 class="gradient">SEO Internal Linking Hub</h2>
+
+<p>
+All blogs are connected in a structured system:
+Discipline → Fitness → Yoga → Mental Clarity → Life Reset Loop
+</p>
+
+<p>
+Every article links back to this hub and related content, building strong SEO authority and preventing broken navigation.
+</p>
+</section>
 
 <!-- FOOTER -->
-<div class="section">
-<p>NomadLifeXP – Evolve in Motion • Discipline • Fitness • Yoga • Mental Clarity</p>
-</div>
+<footer>
+NomadLifeXP – Evolve in Motion • Discipline • Fitness • Yoga • Mental Clarity
+</footer>
 
 </body>
 </html>
