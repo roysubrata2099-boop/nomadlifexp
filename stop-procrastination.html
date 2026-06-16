@@ -36,7 +36,6 @@ body{
     line-height:1.95;
 }
 
-/* TITLE */
 .blog-post h1{
     font-size:3.2rem;
     text-align:center;
@@ -55,7 +54,6 @@ body{
     border-radius:10px;
 }
 
-/* HEADINGS */
 .blog-post h2{
     color:var(--accent);
     font-size:2rem;
@@ -72,7 +70,6 @@ body{
     margin-bottom:15px;
 }
 
-/* TEXT */
 .blog-post p{
     font-size:1.08rem;
     margin-bottom:20px;
@@ -83,7 +80,6 @@ body{
     color:var(--white);
 }
 
-/* LISTS */
 .blog-post ul{
     list-style:none;
     padding-left:0;
@@ -104,7 +100,6 @@ body{
     font-weight:bold;
 }
 
-/* LINKS */
 .blog-post a{
     color:var(--accent);
     font-weight:600;
@@ -115,7 +110,7 @@ body{
     color:var(--accent-hover);
 }
 
-/* CTA BOX */
+/* CTA */
 .cta-box{
     margin:60px 0;
     padding:35px;
@@ -129,9 +124,23 @@ body{
     margin-top:0;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
+/* RELATED ARTICLES (SEO STRUCTURE FIX) */
+.related{
+    margin-top:60px;
+    padding:25px;
+    border-left:4px solid var(--accent);
+    background:rgba(255,255,255,0.03);
+    border-radius:12px;
+}
 
+.related a{
+    display:block;
+    margin:10px 0;
+    color:var(--accent);
+    font-weight:600;
+}
+
+@media(max-width:768px){
     .blog-post{
         padding:40px 16px;
     }
@@ -143,7 +152,6 @@ body{
     .blog-post h2{
         font-size:1.6rem;
     }
-
 }
 
 </style>
@@ -187,9 +195,13 @@ body{
 
 <p>When a task feels too large or uncertain, the brain perceives it as a threat and chooses avoidance.</p>
 
-<h2>How Self-Doubt Fuels Procrastination</h2>
+<!-- INTERNAL LINK (SEO FIX) -->
+<p>
+If you want to understand how attention patterns affect procrastination, read
+<a href="/mental-clarity.html">Mental Clarity: How to Stop Overthinking and Improve Focus</a>.
+</p>
 
-<p>Another major cause of procrastination is self-doubt.</p>
+<h2>How Self-Doubt Fuels Procrastination</h2>
 
 <ul>
 <li>What if I fail?</li>
@@ -258,6 +270,12 @@ body{
 
 <p>Physical movement reduces stress and improves clarity.</p>
 
+<!-- INTERNAL LINK (SEO FIX) -->
+<p>
+For deeper habit building, read
+<a href="/self-discipline-guide.html">Self Discipline and Consistency Guide</a>.
+</p>
+
 <h2>The Missing Piece: Discipline</h2>
 
 <p>Motivation is unreliable.</p>
@@ -292,6 +310,17 @@ body{
 <p>Discipline is built through action, not intention.</p>
 
 <p>And once discipline becomes a system, procrastination loses its power completely.</p>
+
+<!-- RELATED ARTICLES (SEO STRUCTURE FIX) -->
+<div class="related">
+<h2>Related Articles</h2>
+
+<a href="/mental-clarity.html">Mental Clarity and Focus Improvement</a>
+<a href="/attention-span.html">Rebuilding Attention Span</a>
+<a href="/stuck-in-life.html">What to Do When You Feel Stuck</a>
+<a href="/fitness-consistency.html">Fitness Consistency Guide</a>
+
+</div>
 
 </article>
 
