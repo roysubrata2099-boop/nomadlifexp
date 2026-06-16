@@ -22,7 +22,6 @@ body{
   line-height:1.6;
 }
 
-/* NAV */
 nav{
   display:flex;
   justify-content:space-between;
@@ -45,11 +44,8 @@ nav a{
 
 nav a:hover{ color:#f97316; }
 
-.logo{
-  font-weight:800;
-}
+.logo{ font-weight:800; }
 
-/* HERO */
 .hero{
   padding:140px 8% 60px;
   text-align:center;
@@ -61,33 +57,11 @@ nav a:hover{ color:#f97316; }
   -webkit-text-fill-color:transparent;
 }
 
-/* SOCIAL */
-.social{
-  margin-top:15px;
-}
-
-.social a{
-  display:inline-block;
-  margin:0 10px;
-  padding:10px 14px;
-  border:1px solid #1f2937;
-  border-radius:8px;
-  text-decoration:none;
-  color:#cbd5e1;
-}
-
-.social a:hover{
-  border-color:#f97316;
-  color:#f97316;
-}
-
-/* SECTION */
 .section{
   padding:70px 8%;
   text-align:center;
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -95,7 +69,6 @@ nav a:hover{ color:#f97316; }
   margin-top:25px;
 }
 
-/* CARD */
 .card{
   background:linear-gradient(145deg,#111827,#0b1220);
   border:1px solid #1f2937;
@@ -110,15 +83,18 @@ nav a:hover{ color:#f97316; }
   transform:translateY(-5px);
 }
 
+/* SEO FIX: better link styling */
 .card a{
-  display:block;
-  margin-top:6px;
+  display:inline-block;
+  margin-top:10px;
   color:#f97316;
   text-decoration:none;
   font-weight:600;
 }
+.card a:hover{
+  text-decoration:underline;
+}
 
-/* FOOTER */
 footer{
   padding:40px;
   text-align:center;
@@ -132,9 +108,7 @@ footer{
 
 <body>
 
-<!-- NAV -->
 <nav>
-
 <div class="logo gradient">NomadLifeXP Blog</div>
 
 <div>
@@ -145,20 +119,11 @@ footer{
 <a href="/headstand.html">Yoga</a>
 <a href="/mental-clarity.html">Mindset</a>
 </div>
-
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-
 <h1 class="gradient">Self Transformation Blog System</h1>
 <p>Discipline • Fitness • Yoga • Mental Clarity</p>
-
-<div class="social">
-  <a href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
-  <a href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
-</div>
-
 </section>
 
 <!-- DISCIPLINE -->
@@ -166,15 +131,21 @@ footer{
 <h2 class="gradient">Discipline System</h2>
 
 <div class="grid">
+
 <div class="card">
-<h3>How to Build Discipline in Life</h3>
-<a href="/discipline-blog.html">Read →</a>
+<h3>
+<a href="/discipline-blog.html">How to Build Discipline in Life</a>
+</h3>
+<a href="/discipline-blog.html">Read the Discipline Foundation Guide</a>
 </div>
 
 <div class="card">
-<h3>Discipline Creates Freedom</h3>
-<a href="/discipline-creates-freedom.html">Read →</a>
+<h3>
+<a href="/discipline-creates-freedom.html">Discipline Creates Freedom</a>
+</h3>
+<a href="/discipline-creates-freedom.html">Read Why Discipline Creates Freedom</a>
 </div>
+
 </div>
 </section>
 
@@ -183,15 +154,21 @@ footer{
 <h2 class="gradient">Fitness System</h2>
 
 <div class="grid">
+
 <div class="card">
-<h3>Fitness Consistency System</h3>
-<a href="/fitness-consistency.html">Read →</a>
+<h3>
+<a href="/fitness-consistency.html">Fitness Consistency System</a>
+</h3>
+<a href="/fitness-consistency.html">Read Fitness Consistency Strategy</a>
 </div>
 
 <div class="card">
-<h3>Fitness Is Not About Time</h3>
-<a href="/fitness-is-not-about-time.html">Read →</a>
+<h3>
+<a href="/fitness-is-not-about-time.html">Fitness Is Not About Time</a>
+</h3>
+<a href="/fitness-is-not-about-time.html">Read Fitness Mindset Shift</a>
 </div>
+
 </div>
 </section>
 
@@ -200,20 +177,28 @@ footer{
 <h2 class="gradient">Yoga System</h2>
 
 <div class="grid">
+
 <div class="card">
-<h3>Headstand Guide</h3>
-<a href="/headstand.html">Read →</a>
+<h3>
+<a href="/headstand.html">Headstand Guide</a>
+</h3>
+<a href="/headstand.html">Read Headstand Progression Guide</a>
 </div>
 
 <div class="card">
-<h3>Forearm Stand</h3>
-<a href="/forearm-stand.html">Read →</a>
+<h3>
+<a href="/forearm-stand.html">Forearm Stand</a>
+</h3>
+<a href="/forearm-stand.html">Read Forearm Stand Technique</a>
 </div>
 
 <div class="card">
-<h3>Forward Bending</h3>
-<a href="/forward-bending.html">Read →</a>
+<h3>
+<a href="/forward-bending.html">Forward Bending</a>
+</h3>
+<a href="/forward-bending.html">Read Forward Bend Practice</a>
 </div>
+
 </div>
 </section>
 
@@ -222,29 +207,38 @@ footer{
 <h2 class="gradient">Mental Clarity System</h2>
 
 <div class="grid">
+
 <div class="card">
-<h3>Mental Clarity</h3>
-<a href="/mental-clarity.html">Read →</a>
+<h3>
+<a href="/mental-clarity.html">Mental Clarity</a>
+</h3>
+<a href="/mental-clarity.html">Read Mental Clarity System</a>
 </div>
 
 <div class="card">
-<h3>Attention Span</h3>
-<a href="/attention-span.html">Read →</a>
+<h3>
+<a href="/attention-span.html">Attention Span</a>
+</h3>
+<a href="/attention-span.html">Read Attention Training Guide</a>
 </div>
 
 <div class="card">
-<h3>Stop Procrastination</h3>
-<a href="/stop-procrastination.html">Read →</a>
+<h3>
+<a href="/stop-procrastination.html">Stop Procrastination</a>
+</h3>
+<a href="/stop-procrastination.html">Read Procrastination Fix System</a>
 </div>
 
 <div class="card">
-<h3>Stuck in Life</h3>
-<a href="/stuck-in-life.html">Read →</a>
+<h3>
+<a href="/stuck-in-life.html">Stuck in Life</a>
+</h3>
+<a href="/stuck-in-life.html">Read Life Reset Framework</a>
 </div>
+
 </div>
 </section>
 
-<!-- SEO HUB -->
 <section class="section">
 <h2 class="gradient">SEO Internal Linking Hub</h2>
 
@@ -254,11 +248,10 @@ Discipline → Fitness → Yoga → Mental Clarity → Life Reset Loop
 </p>
 
 <p>
-Every article links back to this hub and related content, building strong SEO authority and preventing broken navigation.
+Each article is internally linked with descriptive anchor text to improve SEO relevance, crawlability, and topic authority.
 </p>
 </section>
 
-<!-- FOOTER -->
 <footer>
 NomadLifeXP – Evolve in Motion • Discipline • Fitness • Yoga • Mental Clarity
 </footer>
