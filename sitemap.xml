@@ -1,49 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://nomadlifexp.com/</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
+<url>
+<loc>https://nomadlifexp.com/index.html</loc>
+</url>
 
-  <url>
-    <loc>https://nomadlifexp.com/blog.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
+<url>
+<loc>https://nomadlifexp.com/blog.html</loc>
+</url>
 
-  <url>
-    <loc>https://nomadlifexp.com/discipline-blog.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
+<!-- DISCIPLINE -->
+<url><loc>https://nomadlifexp.com/discipline-creates-freedom.html</loc></url>
+<url><loc>https://nomadlifexp.com/self-discipline-guide.html</loc></url>
+<url><loc>https://nomadlifexp.com/stop-procrastination.html</loc></url>
 
-  <url>
-    <loc>https://nomadlifexp.com/discipline-creates-freedom.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
+<!-- MENTAL CLARITY -->
+<url><loc>https://nomadlifexp.com/mental-clarity.html</loc></url>
+<url><loc>https://nomadlifexp.com/attention-span.html</loc></url>
+<url><loc>https://nomadlifexp.com/stuck-in-life.html</loc></url>
 
-  <url>
-    <loc>https://nomadlifexp.com/fitness-consistency.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
+<!-- FITNESS -->
+<url><loc>https://nomadlifexp.com/fitness-is-not-about-time.html</loc></url>
 
-  <url>
-    <loc>https://nomadlifexp.com/forward-bending.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
-
-  <url>
-    <loc>https://nomadlifexp.com/headstand.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
-
-  <url>
-    <loc>https://nomadlifexp.com/forearm-stand.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
-
-  <url>
-    <loc>https://nomadlifexp.com/stuck-in-life.html</loc>
-    <lastmod>2026-06-04</lastmod>
-  </url>
+<!-- YOGA -->
+<url><loc>https://nomadlifexp.com/headstand.html</loc></url>
+<url><loc>https://nomadlifexp.com/forearm-stand.html</loc></url>
+<url><loc>https://nomadlifexp.com/forward-bending.html</loc></url>
 
 </urlset>
