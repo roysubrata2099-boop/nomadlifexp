@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- HOME / AUTHORITY HUB -->
   <url>
     <loc>https://nomadlifexp.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- BLOG HUB (IMPORTANT - ADD THIS) -->
+  <url>
+    <loc>https://nomadlifexp.com/blog.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- CORE MINDSET / CLARITY -->
   <url>
     <loc>https://nomadlifexp.com/mental-clarity.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://nomadlifexp.com/attention-span-guide.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://nomadlifexp.com/stop-procrastination.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://nomadlifexp.com/stuck-in-life.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- DISCIPLINE CLUSTER -->
   <url>
     <loc>https://nomadlifexp.com/discipline-creates-freedom.html</loc>
     <changefreq>weekly</changefreq>
@@ -22,17 +50,31 @@
   <url>
     <loc>https://nomadlifexp.com/self-discipline-guide.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- FITNESS CLUSTER -->
+  <url>
+    <loc>https://nomadlifexp.com/fitness-consistency.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://nomadlifexp.com/attention-span-guide.html</loc>
+    <loc>https://nomadlifexp.com/fitness-is-not-about-time.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- YOGA CLUSTER -->
+  <url>
+    <loc>https://nomadlifexp.com/headstand.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://nomadlifexp.com/stop-procrastination.html</loc>
+    <loc>https://nomadlifexp.com/forearm-stand.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -40,19 +82,7 @@
   <url>
     <loc>https://nomadlifexp.com/forward-bending.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://nomadlifexp.com/headstand.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://nomadlifexp.com/stuck-in-life.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
