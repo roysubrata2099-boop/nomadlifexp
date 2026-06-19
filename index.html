@@ -1,283 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO TITLE (OPTIMIZED ~60 chars) -->
 <title>NomadLifeXP | Discipline, Fitness, Yoga & Mental Clarity</title>
 
-<!-- SEO DESCRIPTION (OPTIMIZED 120–160 chars) -->
 <meta name="description" content="NomadLifeXP is a self-transformation system for discipline, fitness, yoga, and mental clarity. Build focus, habits, and long-term growth.">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://nomadlifexp.com/">
 
-<!-- FAVICON FIX -->
+<!-- Favicon -->
+
 <link rel="icon" type="image/png" href="./logo.png">
 
-<!-- OPEN GRAPH -->
-<meta property="og:title" content="NomadLifeXP | Evolve in Motion">
-<meta property="og:description" content="Discipline, fitness, yoga, and mental clarity system for self-transformation.">
+<!-- Open Graph -->
+
+<meta property="og:title" content="NomadLifeXP | Discipline, Fitness, Yoga & Mental Clarity">
+<meta property="og:description" content="Build discipline, fitness, yoga practice, and mental clarity through practical systems and long-term growth.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nomadlifexp.com/">
 <meta property="og:image" content="https://nomadlifexp.com/hero.jpg">
+<meta property="og:site_name" content="NomadLifeXP">
+<meta property="og:locale" content="en_US">
 
-<!-- SCHEMA.ORG (SEO BOOST FIX) -->
+<!-- Twitter Cards -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NomadLifeXP | Discipline, Fitness, Yoga & Mental Clarity">
+<meta name="twitter:description" content="Build discipline, fitness, yoga practice, and mental clarity through practical systems and long-term growth.">
+<meta name="twitter:image" content="https://nomadlifexp.com/hero.jpg">
+
+<!-- Structured Data -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "NomadLifeXP",
-  "url": "https://nomadlifexp.com",
-  "logo": "https://nomadlifexp.com/logo.png",
-  "sameAs": [
-    "https://www.instagram.com/nomadlifexp/",
-    "https://www.youtube.com/channel/UC5N1haLLO9kr_qAcmnSqy0g"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nomadlifexp.com/#organization",
+      "name": "NomadLifeXP",
+      "url": "https://nomadlifexp.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nomadlifexp.com/logo.png"
+      },
+      "sameAs": [
+        "https://www.instagram.com/nomadlifexp/",
+        "https://www.youtube.com/@nomadlifexp"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nomadlifexp.com/#website",
+      "url": "https://nomadlifexp.com/",
+      "name": "NomadLifeXP",
+      "description": "Self-transformation through discipline, fitness, yoga and mental clarity.",
+      "publisher": {
+        "@id": "https://nomadlifexp.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://nomadlifexp.com/#webpage",
+      "url": "https://nomadlifexp.com/",
+      "name": "NomadLifeXP | Discipline, Fitness, Yoga & Mental Clarity",
+      "description": "NomadLifeXP is a self-transformation system for discipline, fitness, yoga and mental clarity.",
+      "isPartOf": {
+        "@id": "https://nomadlifexp.com/#website"
+      },
+      "about": {
+        "@id": "https://nomadlifexp.com/#organization"
+      },
+      "inLanguage": "en-US"
+    }
   ]
 }
 </script>
 
-<!-- FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-  margin:0;
-  font-family:Poppins,sans-serif;
-  background:#0b0f14;
-  color:#e5e7eb;
-  line-height:1.7;
-}
-
-/* NAV */
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:14px 8%;
-  border-bottom:1px solid #1f2937;
-  position:fixed;
-  width:100%;
-  top:0;
-  background:#0b0f14;
-  z-index:1000;
-}
-
-nav a{
-  color:#cbd5e1;
-  margin-left:14px;
-  text-decoration:none;
-  font-weight:500;
-}
-
-nav a:hover{ color:#f97316; }
-
-/* LOGO */
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:800;
-}
-
-.logo img{
-  height:30px;
-}
-
-/* HERO */
-.hero{
-  padding:140px 8% 70px;
-  text-align:center;
-  background:url("./hero.jpg") center/cover no-repeat;
-}
-
-.hero h1{
-  font-size:54px;
-  text-shadow:0 4px 20px rgba(0,0,0,0.6);
-}
-
-.gradient{
-  background:linear-gradient(90deg,#8b5cf6,#f97316,#3b82f6);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-/* SOCIAL */
-.social a{
-  display:inline-block;
-  margin:0 10px;
-  padding:10px 16px;
-  border:1px solid #1f2937;
-  border-radius:8px;
-  color:#cbd5e1;
-  text-decoration:none;
-}
-
-.social a:hover{
-  border-color:#f97316;
-  color:#f97316;
-}
-
-/* SECTION */
-.section{
-  padding:80px 8%;
-  text-align:center;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-  margin-top:30px;
-}
-
-/* CARD */
-.card{
-  background:linear-gradient(145deg,#111827,#0b1220);
-  border:1px solid #1f2937;
-  padding:20px;
-  border-radius:14px;
-  transition:0.2s ease;
-  text-align:left;
-}
-
-.card:hover{
-  border-color:#f97316;
-  transform:translateY(-5px);
-}
-
-.card a{
-  color:#f97316;
-  text-decoration:none;
-  font-weight:600;
-}
-
-/* SEO CONTENT SECTION */
-.seo-hub{
-  padding:80px 8%;
-  background:#0a0f1a;
-  border-top:1px solid #1f2937;
-}
-
-.seo-hub p{
-  max-width:900px;
-  margin:auto;
-  color:#94a3b8;
-  margin-bottom:14px;
-}
-
-/* FOOTER */
-footer{
-  padding:40px;
-  text-align:center;
-  color:#94a3b8;
-  border-top:1px solid #1f2937;
-  margin-top:60px;
-}
-
-</style>
-
 </head>
-
-<body>
-
-<!-- NAV -->
-<nav>
-
-<div class="logo">
-  <img src="./logo.png" alt="NomadLifeXP Logo">
-  <span class="gradient">NomadLifeXP</span>
-</div>
-
-<div>
-<a href="/">Home</a>
-<a href="/blog.html">Blog</a>
-<a href="/discipline-blog.html">Discipline</a>
-<a href="/fitness-consistency.html">Fitness</a>
-<a href="/headstand.html">Yoga</a>
-<a href="/mental-clarity.html">Mindset</a>
-</div>
-
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-
-<h1 class="gradient">Evolve in Motion</h1>
-
-<p>NomadLifeXP – Discipline • Fitness • Yoga • Mental Clarity</p>
-
-<div class="social">
-  <a href="https://www.youtube.com/@nomadlifexp" target="_blank">YouTube</a>
-  <a href="https://www.instagram.com/nomadlifexp/" target="_blank">Instagram</a>
-</div>
-
-</section>
-
-<!-- CORE SECTION -->
-<section class="section">
-
-<h2 class="gradient">Core Transformation Systems</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3><a href="/discipline-blog.html">Discipline & Self Control System</a></h3>
-<a href="/discipline-creates-freedom.html">Learn how discipline creates freedom</a>
-</div>
-
-<div class="card">
-<h3><a href="/fitness-consistency.html">Fitness Consistency System</a></h3>
-<a href="/fitness-is-not-about-time.html">Shift your fitness mindset</a>
-</div>
-
-<div class="card">
-<h3><a href="/headstand.html">Yoga Strength System</a></h3>
-<a href="/forward-bending.html">Improve flexibility and calmness</a>
-</div>
-
-<div class="card">
-<h3><a href="/mental-clarity.html">Mental Clarity System</a></h3>
-<a href="/stop-procrastination.html">Stop procrastination effectively</a>
-</div>
-
-</div>
-
-</section>
-
-<!-- SEO CONTENT HUB (EXPANDED FOR RANKING) -->
-<section class="seo-hub">
-
-<h2 class="gradient">Why NomadLifeXP Works</h2>
-
-<p>
-NomadLifeXP is built as a structured self-improvement ecosystem focused on discipline, fitness, yoga, and mental clarity.
-It follows a simple principle: your habits shape your identity, and your identity shapes your life.
-</p>
-
-<p>
-Most people struggle not because they lack motivation, but because they lack systems.
-When systems are strong, discipline becomes automatic and progress becomes consistent.
-</p>
-
-<p>
-This platform is designed to improve focus, reduce procrastination, and build long-term mental resilience through practical daily systems.
-</p>
-
-<p>
-Explore deeper insights in the blog section and begin building a stronger version of yourself step by step.
-</p>
-
-</section>
-
-<!-- FOOTER -->
-<footer>
-NomadLifeXP – Evolve in Motion • Discipline • Fitness • Yoga • Mental Clarity
-</footer>
-
-</body>
-</html>
