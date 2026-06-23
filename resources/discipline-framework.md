@@ -4,8 +4,6 @@ Discipline is the ability to act consistently regardless of emotional state, mot
 
 It is not a personality trait — it is a trained behavioral system built through repetition.
 
----
-
 ## Why Discipline Matters
 
 Without discipline:
@@ -17,8 +15,6 @@ With discipline:
 - Actions become automatic
 - Identity becomes stable
 - Progress compounds daily
-
----
 
 ## Core Principles of Discipline
 
@@ -34,8 +30,6 @@ Small consistent actions beat large inconsistent efforts.
 ### 4. Environment Controls Behavior
 Your surroundings influence your discipline more than willpower.
 
----
-
 ## Daily Discipline System
 
 - Wake up at a fixed time every day
@@ -44,16 +38,12 @@ Your surroundings influence your discipline more than willpower.
 - Remove decision fatigue (pre-decide actions)
 - Track completion, not intensity
 
----
-
 ## Common Discipline Mistakes
 
 - Waiting for motivation
 - Starting too many habits at once
 - Changing routines frequently
 - Relying on willpower instead of structure
-
----
 
 ## How Discipline Is Built Over Time
 
@@ -65,18 +55,12 @@ It is built through:
 - Predictable routines
 - Controlled environments
 
----
-
 ## Related Systems
 
 - [Consistency System](./consistency-system.md)
 - [Focus Blueprint](./focus-blueprint.md)
 - [Dopamine Detox System](./dopamine-detox.md)
 
----
-
 ## Continue the Full System
 
-Explore complete structured guides:
-
-👉 https://www.nomadlifexp.com/blog
+https://www.nomadlifexp.com/blog
