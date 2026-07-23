@@ -1,11 +1,11 @@
 title: NomadLifeXP Blog
-description: ...
+description: Fitness • Yoga • Mindset • Growth
 url: https://nomadlifexp.com
+
 theme: minima
 
 plugins:
   - jekyll-feed
 
 include:
-  - fitness-consistency
-  - fitness-consistency.html
+  - "*.html"
