@@ -1,4 +1,4 @@
-name: Deploy Jekyll Site to GitHub Pages
+name: Deploy Jekyll Site
 
 on:
   push:
@@ -10,10 +10,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
 
@@ -36,22 +32,21 @@ jobs:
       - name: Build Jekyll
         run: bundle exec jekyll build
 
-      - name: Upload Pages artifact
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
 
     needs: build
 
+    environment:
+      name: github-pages
+
     steps:
-      - name: Deploy
-        id: deployment
+
+      - name: Deploy Pages
         uses: actions/deploy-pages@v4
