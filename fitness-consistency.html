@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
+    <!-- Instant browser redirect -->
+    <meta http-equiv="refresh" content="0; url=https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap">
+    
+    <!-- Next.js canonical tag tells Google where the real SEO value belongs -->
+    <link rel="canonical" href="https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap" />
+    
     <script>
-        // Maps specific old paths to specific new Next.js paths
-        const redirectMap = {
-            "/fitness-consistency.html": "/blog/posts/passive-fitness-consumption-trap"
-            // Add more old-to-new paths here as needed:
-            // "/old-post.html": "/blog/posts/new-post-slug"
-        };
-
-        const currentPath = window.location.pathname;
-        const targetPath = redirectMap[currentPath] || currentPath;
-        
-        // Redirects to your new Next.js Vercel site domain
-        window.location.replace("https://www.nomadlifexp.com" + targetPath);
+        window.location.replace("https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap");
     </script>
 </head>
 <body>
-    <p>Redirecting to new site...</p>
+    <p>This page has moved. <a href="https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap">Click here</a> if you are not redirected automatically.</p>
 </body>
 </html>
