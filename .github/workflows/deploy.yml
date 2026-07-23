@@ -11,13 +11,17 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
 
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Pages
@@ -29,10 +33,19 @@ jobs:
           ruby-version: "3.1"
           bundler-cache: true
 
-      - name: Build Jekyll
-        run: bundle exec jekyll build
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
 
-      - name: Upload Pages Artifact
+      - name: Verify generated pages
+        run: |
+          echo "Checking _site output"
+          ls -la _site
+          echo "Checking test page"
+          ls -la _site/test-page.html || true
+          echo "Checking fitness redirect"
+          ls -la _site/fitness-consistency.html || true
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
@@ -45,8 +58,10 @@ jobs:
 
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
 
-      - name: Deploy Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
