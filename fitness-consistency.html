@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
-    <!-- Immediate browser redirect -->
-    <meta http-equiv="refresh" content="0; url=https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap">
-    <!-- JS fallback redirect -->
     <script>
-        window.location.href = "https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap";
+        // Maps specific old paths to specific new Next.js paths
+        const redirectMap = {
+            "/fitness-consistency.html": "/blog/posts/passive-fitness-consumption-trap"
+            // Add more old-to-new paths here as needed:
+            // "/old-post.html": "/blog/posts/new-post-slug"
+        };
+
+        const currentPath = window.location.pathname;
+        const targetPath = redirectMap[currentPath] || currentPath;
+        
+        // Redirects to your new Next.js Vercel site domain
+        window.location.replace("https://www.nomadlifexp.com" + targetPath);
     </script>
-    <!-- SEO instruction: Tells search engine bots where the canonical version lives now -->
-    <link rel="canonical" href="https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap" />
 </head>
 <body>
-    <p>This page has moved. If you are not redirected automatically, <a href="https://www.nomadlifexp.com/blog/posts/passive-fitness-consumption-trap">click here</a>.</p>
+    <p>Redirecting to new site...</p>
 </body>
 </html>
