@@ -2,5 +2,7 @@ title: NomadLifeXP Blog
 description: ...
 url: https://nomadlifexp.com
 theme: minima
+
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
