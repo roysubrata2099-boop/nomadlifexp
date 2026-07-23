@@ -5,3 +5,7 @@ theme: minima
 
 plugins:
   - jekyll-feed
+
+include:
+  - fitness-consistency
+  - fitness-consistency.html
