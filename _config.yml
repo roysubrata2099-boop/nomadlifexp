@@ -8,4 +8,5 @@ plugins:
   - jekyll-feed
 
 include:
-  - redirects
+  - blog
+  - "*.html"
