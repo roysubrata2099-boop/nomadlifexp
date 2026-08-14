@@ -30,7 +30,6 @@ permalink: /blog/posts/stop-procrastination
 </head>
 
 <body>
-
   <h1>This article has moved</h1>
 
   <p>
@@ -42,6 +41,5 @@ permalink: /blog/posts/stop-procrastination
       Read the new article
     </a>
   </p>
-
 </body>
 </html>
