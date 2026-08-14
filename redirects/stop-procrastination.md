@@ -7,15 +7,20 @@ permalink: /blog/posts/stop-procrastination
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <title>Article Moved | NomadLifeXP</title>
 
   <meta name="robots" content="noindex, follow">
 
-  <link rel="canonical"
-        href="https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop">
+  <link
+    rel="canonical"
+    href="https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop"
+  >
 
-  <meta http-equiv="refresh"
-        content="0; url=https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop">
+  <meta
+    http-equiv="refresh"
+    content="0; url=https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop"
+  >
 
   <script>
     window.location.replace(
@@ -25,12 +30,18 @@ permalink: /blog/posts/stop-procrastination
 </head>
 
 <body>
+
   <h1>This article has moved</h1>
+
+  <p>
+    This article has moved to a new location.
+  </p>
 
   <p>
     <a href="https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop">
       Read the new article
     </a>
   </p>
+
 </body>
 </html>
