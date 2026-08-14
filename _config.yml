@@ -8,4 +8,4 @@ plugins:
   - jekyll-feed
 
 include:
-  - "*.html"
+  - redirects
