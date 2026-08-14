@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -21,8 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Pages
@@ -37,15 +35,14 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build --trace
 
-      - name: Verify old URL redirect
+      - name: Check redirect
         run: |
-          echo "===== CHECKING REDIRECT ====="
+          echo "Checking redirect file..."
 
           if test -f "_site/blog/posts/stop-procrastination/index.html"; then
-            echo "✅ Redirect page FOUND"
+            echo "SUCCESS: redirect exists"
           else
-            echo "❌ Redirect page NOT FOUND"
-            echo "===== GENERATED FILES ====="
+            echo "ERROR: redirect does not exist"
             find _site -type f | sort
             exit 1
           fi
@@ -64,7 +61,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
