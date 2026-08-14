@@ -1,9 +1,7 @@
 name: Smart SEO Automation (IndexNow + Sitemap)
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   seo:
@@ -11,39 +9,57 @@ jobs:
 
     steps:
       - name: Install tools
-        run: sudo apt-get install jq -y
+        run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Fetch posts.json
-        run: curl -s https://nomadlifexp.com/data/posts.json > posts.json
+        run: |
+          curl -fL --retry 3 \
+            -H "Accept: application/json" \
+            "https://nomadlifexp.com/data/posts.json" \
+            -o posts.json
+
+      - name: Validate posts.json
+        run: |
+          echo "===== posts.json ====="
+          cat posts.json
+          echo
+          echo "===== JSON validation ====="
+          jq empty posts.json
+          echo "Valid JSON"
 
       - name: Extract URLs
         id: urls
         run: |
           jq -r '.[].loc' posts.json > all_urls.txt
-          echo "ALL_URLS=$(cat all_urls.txt | tr '\n' ' ')" >> $GITHUB_OUTPUT
+
+          echo "===== URLS ====="
+          cat all_urls.txt
+
+          URLS=$(tr '\n' ' ' < all_urls.txt)
+          echo "ALL_URLS=$URLS" >> "$GITHUB_OUTPUT"
 
       - name: Generate sitemap.xml
         run: |
           echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
 
-          jq -c '.[]' posts.json | while read item; do
-            loc=$(echo $item | jq -r '.loc')
-            lastmod=$(echo $item | jq -r '.lastmod')
+          jq -c '.[]' posts.json | while read -r item; do
+            loc=$(echo "$item" | jq -r '.loc')
+            lastmod=$(echo "$item" | jq -r '.lastmod')
 
             echo "<url><loc>$loc</loc><lastmod>$lastmod</lastmod></url>" >> sitemap.xml
           done
 
           echo '</urlset>' >> sitemap.xml
 
-      - name: Submit to IndexNow (smart batch)
+      - name: Submit to IndexNow
         run: |
           URLS=$(jq -r '.[].loc' posts.json | jq -R -s -c 'split("\n")[:-1]')
 
-          curl -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json" \
-          -d "{
-            \"host\": \"nomadlifexp.com\",
-            \"key\": \"5738d20b20ad43c5819a0f6930282857\",
-            \"urlList\": $URLS
-          }"
+          curl -fX POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{
+              \"host\": \"nomadlifexp.com\",
+              \"key\": \"5738d20b20ad43c5819a0f6930282857\",
+              \"urlList\": $URLS
+            }"
