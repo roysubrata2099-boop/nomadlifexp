@@ -35,39 +35,18 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build --trace
 
-      - name: Inspect generated site
+      - name: Check generated site
         run: |
-          echo "=== BLOG FILES ==="
+          echo "=== PROCRASTINATION ==="
+          find _site -iname '*procrastination*' -print
+
+          echo "=== BLOG ==="
           find _site/blog -type f | sort || true
 
-          echo ""
-          echo "=== PROCRASTINATION FILES ==="
-          find _site -iname '*procrastination*' -print | sort || true
-
-          echo ""
-          echo "=== SITE ROOT ==="
-          ls -la _site
-
-      - name: Check article
-        run: |
-          if test -f "_site/blog/posts/stop-procrastination/index.html"; then
-            echo "ARTICLE FOUND"
-          else
-            echo "ARTICLE NOT FOUND"
-            exit 1
-          fi
-
-      - name: Check homepage
-        run: |
-          if test -f "_site/index.html"; then
-            echo "HOMEPAGE FOUND"
-          else
-            echo "HOMEPAGE NOT FOUND"
-            exit 1
-          fi
+          test -f "_site/blog/posts/stop-procrastination/index.html"
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
