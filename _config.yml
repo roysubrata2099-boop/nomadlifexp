@@ -2,9 +2,3 @@ title: NomadLifeXP
 description: Fitness, Yoga, Mindset & Growth
 url: "https://www.nomadlifexp.com"
 baseurl: ""
-
-markdown: kramdown
-permalink: pretty
-
-plugins:
-  - jekyll-feed
