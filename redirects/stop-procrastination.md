@@ -1,0 +1,41 @@
+---
+layout: null
+permalink: /blog/posts/stop-procrastination
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Article Moved | NomadLifeXP</title>
+
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="canonical"
+        href="https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop">
+
+  <meta http-equiv="refresh"
+        content="0;url=https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop">
+
+  <script>
+    window.location.replace(
+      "https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop"
+    );
+  </script>
+</head>
+
+<body>
+  <h1>This article has moved</h1>
+
+  <p>
+    You are being redirected to the latest version of this article.
+  </p>
+
+  <p>
+    <a href="https://nomadlifexp.com/blog/posts/why-you-procrastinate-how-to-stop">
+      Read the new article
+    </a>
+  </p>
+</body>
+</html>
