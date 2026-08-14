@@ -1,13 +1,11 @@
-title: NomadLifeXP Blog
-description: Fitness • Yoga • Mindset • Growth
+title: NomadLifeXP
+description: Fitness, Yoga, Mindset & Growth
 
-url: https://nomadlifexp.com
+url: "https://nomadlifexp.com"
 baseurl: ""
 
-theme: minima
+markdown: kramdown
+permalink: pretty
 
 plugins:
   - jekyll-feed
-
-include:
-  - "*.html"
