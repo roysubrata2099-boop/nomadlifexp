@@ -1,18 +1,66 @@
-- name: Build Jekyll site
-  run: bundle exec jekyll build --trace
+name: Deploy Jekyll site to GitHub Pages
 
-- name: Check generated files
-  run: |
-    echo "==== SITE FILES ===="
-    find _site -maxdepth 2 -type f | sort | head -100
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-    echo "==== CHECK TEST PAGE ===="
-    test -f _site/test-page.html && echo "FOUND test-page.html" || echo "MISSING test-page.html"
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-    echo "==== CHECK REDIRECT PAGE ===="
-    test -f _site/fitness-consistency.html && echo "FOUND fitness-consistency.html" || echo "MISSING fitness-consistency.html"
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-- name: Upload Pages artifact
-  uses: actions/upload-pages-artifact@v3
-  with:
-    path: ./_site
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
+
+      - name: Check generated redirect
+        run: |
+          echo "==== REDIRECT FILE ===="
+          if test -f _site/blog/posts/stop-procrastination/index.html; then
+            echo "FOUND redirect page"
+          else
+            echo "MISSING redirect page"
+            echo "==== SITE FILES ===="
+            find _site -type f | sort | head -200
+            exit 1
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
