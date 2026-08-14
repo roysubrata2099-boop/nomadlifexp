@@ -1,12 +1,13 @@
 ---
 layout: null
-permalink: /blog/posts/stop-procrastination
+permalink: /blog/posts/stop-procrastination/
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Article Moved | NomadLifeXP</title>
 
@@ -30,7 +31,7 @@ permalink: /blog/posts/stop-procrastination
 </head>
 
 <body>
-  <h1>This article has moved</h1>
+  <h1>Article Moved</h1>
 
   <p>
     This article has moved to a new location.
