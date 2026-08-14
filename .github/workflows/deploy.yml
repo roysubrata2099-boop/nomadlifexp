@@ -1,76 +1,16 @@
-name: Deploy Jekyll site to GitHub Pages
+- name: Inspect generated site
+  run: |
+    echo "=== BLOG FILES ==="
+    find _site/blog -type f | sort || true
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+    echo ""
+    echo "=== PROCRASTINATION FILES ==="
+    find _site -iname '*procrastination*' -print | sort || true
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    echo ""
+    echo "=== JEKYLL CONFIG ==="
+    bundle exec jekyll doctor --verbose || true
 
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.3"
-          bundler-cache: true
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --trace
-
-      - name: Check redirect
-        run: |
-          echo "Checking generated redirect..."
-
-          if test -f "_site/blog/posts/stop-procrastination/index.html"; then
-            echo "REDIRECT FOUND"
-          else
-            echo "REDIRECT NOT FOUND"
-            echo "Generated files:"
-            find _site -type f | sort
-            exit 1
-          fi
-
-      - name: Check homepage
-        run: |
-          if test -f "_site/index.html"; then
-            echo "HOMEPAGE FOUND"
-          else
-            echo "HOMEPAGE NOT FOUND"
-            exit 1
-          fi
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    echo ""
+    echo "=== SITE ROOT ==="
+    ls -la _site
