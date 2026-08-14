@@ -1,17 +1,13 @@
-- name: Build Jekyll site
-  run: bundle exec jekyll build --trace
+title: NomadLifeXP Blog
+description: Fitness • Yoga • Mindset • Growth
 
-- name: Verify generated site
-  run: |
-    echo "=== PROCRASTINATION ==="
-    find _site -iname '*procrastination*' -print
+url: https://nomadlifexp.com
+baseurl: ""
 
-    echo "=== BLOG ==="
-    find _site/blog -type f | sort || true
+theme: minima
 
-    test -f "_site/blog/posts/stop-procrastination/index.html"
+plugins:
+  - jekyll-feed
 
-- name: Upload Pages artifact
-  uses: actions/upload-pages-artifact@v3
-  with:
-    path: ./_site
+include:
+  - "*.html"
