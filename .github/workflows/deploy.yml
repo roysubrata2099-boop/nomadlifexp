@@ -1,11 +1,70 @@
-- name: Check generated redirect
-  run: |
-    echo "==== REDIRECT FILE ===="
-    if test -f _site/blog/posts/stop-procrastination/index.html; then
-      echo "FOUND redirect page"
-    else
-      echo "MISSING redirect page"
-      echo "==== SITE FILES ===="
-      find _site -type f | sort | head -200
-      exit 1
-    fi
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
+
+      - name: Verify old URL redirect
+        run: |
+          echo "===== CHECKING REDIRECT ====="
+
+          if test -f "_site/blog/posts/stop-procrastination/index.html"; then
+            echo "✅ Redirect page FOUND"
+          else
+            echo "❌ Redirect page NOT FOUND"
+            echo "===== GENERATED FILES ====="
+            find _site -type f | sort
+            exit 1
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
