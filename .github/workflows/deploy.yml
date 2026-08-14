@@ -35,15 +35,27 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build --trace
 
-      - name: Check redirect
+      - name: Show generated site
         run: |
-          echo "Checking redirect file..."
+          echo "========== ROOT =========="
+          ls -la
 
-          if test -f "_site/blog/posts/stop-procrastination/index.html"; then
-            echo "SUCCESS: redirect exists"
+          echo "========== GENERATED SITE =========="
+          find _site -type f | sort
+
+          echo "========== INDEX =========="
+          if test -f "_site/index.html"; then
+            echo "FOUND: _site/index.html"
           else
-            echo "ERROR: redirect does not exist"
-            find _site -type f | sort
+            echo "ERROR: _site/index.html is missing"
+            exit 1
+          fi
+
+          echo "========== REDIRECT =========="
+          if test -f "_site/blog/posts/stop-procrastination/index.html"; then
+            echo "FOUND: _site/blog/posts/stop-procrastination/index.html"
+          else
+            echo "ERROR: redirect is missing"
             exit 1
           fi
 
@@ -53,12 +65,12 @@ jobs:
           path: ./_site
 
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
 
     steps:
       - name: Deploy to GitHub Pages
