@@ -423,23 +423,22 @@ You do not need to optimize every aspect of life simultaneously. Start with one 
 🌍 Official External Presence
 NomadLifeXP Across the Web
 
-NomadLifeXP extends its knowledge ecosystem beyond the main website through publishing platforms, professional networks, social channels, and community-oriented profiles.
-
-Explore the platforms that fit your interests and preferred way of learning.
+Explore the official NomadLifeXP profiles, publishing platforms, and community channels. Click any platform name or Visit link to open its corresponding page.
 
 No.	Platform	Description	Link
-01	Substack	Official publication for essays, experiments, systems, and practical ideas on human evolution	Visit Substack
-02	LinkedIn	NomadLifeXP company presence	Visit LinkedIn
-03	Medium	NomadLifeXP and Subrata Roy's publishing presence	Visit Medium
-04	Quora	NomadLifeXP profile and knowledge contributions	Visit Quora
-05	Facebook	NomadLifeXP Facebook page	Visit Facebook
-06	GitHub	Official repository and project development	Visit GitHub
-07	Pinterest	NomadLifeXP Pinterest presence	Visit Pinterest
-08	Instagram	NomadLifeXP Instagram profile	Visit Instagram
-09	YouTube	NomadLifeXP YouTube channel	Visit YouTube
-10	Threads	NomadLifeXP Threads profile	Visit Threads
-11	Blogger	NomadLifeXP publishing platform	Visit Blogger
+01	📝 Substack	Essays, experiments, systems, and practical ideas on human evolution	↗ Visit Substack
+02	💼 LinkedIn	NomadLifeXP company presence	↗ Visit LinkedIn
+03	✍️ Medium	NomadLifeXP and Subrata Roy's publishing presence	↗ Visit Medium
+04	💬 Quora	NomadLifeXP profile and knowledge contributions	↗ Visit Quora
+05	📘 Facebook	NomadLifeXP Facebook page	↗ Visit Facebook
+06	💻 GitHub	Official repository and project development	↗ Visit GitHub
+07	📌 Pinterest	NomadLifeXP Pinterest presence	↗ Visit Pinterest
+08	📸 Instagram	NomadLifeXP Instagram profile	↗ Visit Instagram
+09	▶️ YouTube	NomadLifeXP YouTube channel	↗ Visit YouTube
+10	🧵 Threads	NomadLifeXP Threads profile	↗ Visit Threads
+11	📰 Blogger	NomadLifeXP publishing platform	↗ Visit Blogger
 
+Follow NomadLifeXP. Explore ideas. Build better systems. Evolve through action.
 These channels provide different ways to discover ideas, explore educational content, and follow the project's development.
 
 🤝 Contributing
